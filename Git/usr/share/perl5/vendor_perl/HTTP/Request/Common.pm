@@ -3,7 +3,11 @@ package HTTP::Request::Common;
 use strict;
 use warnings;
 
+<<<<<<< HEAD
 our $VERSION = '6.36';
+=======
+our $VERSION = '6.33';
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 our $DYNAMIC_FILE_UPLOAD ||= 0;  # make it defined (don't know why)
 
@@ -314,17 +318,28 @@ HTTP::Request::Common - Construct common HTTP::Request objects
 
 =head1 VERSION
 
+<<<<<<< HEAD
 version 6.36
+=======
+version 6.33
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 =head1 SYNOPSIS
 
   use HTTP::Request::Common;
   $ua = LWP::UserAgent->new;
   $ua->request(GET 'http://www.sn.no/');
+<<<<<<< HEAD
   $ua->request(POST 'http://somewhere/foo', foo => bar, bar => foo);
   $ua->request(PATCH 'http://somewhere/foo', foo => bar, bar => foo);
   $ua->request(PUT 'http://somewhere/foo', foo => bar, bar => foo);
   $ua->request(OPTIONS 'http://somewhere/foo', foo => bar, bar => foo);
+=======
+  $ua->request(POST 'http://somewhere/foo', [foo => bar, bar => foo]);
+  $ua->request(PATCH 'http://somewhere/foo', [foo => bar, bar => foo]);
+  $ua->request(PUT 'http://somewhere/foo', [foo => bar, bar => foo]);
+  $ua->request(OPTIONS 'http://somewhere/foo', [foo => bar, bar => foo]);
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 =head1 DESCRIPTION
 

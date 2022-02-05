@@ -3,7 +3,11 @@
 "		Based on Tera Term Version 4.100
 " Maintainer:	Ken Takata
 " URL:		https://github.com/k-takata/vim-teraterm
+<<<<<<< HEAD
 " Last Change:	2021-10-18
+=======
+" Last Change:	2018-08-31
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Filenames:	*.ttl
 " License:	VIM License
 
@@ -18,8 +22,11 @@ setlocal indentexpr=GetTeraTermIndent(v:lnum)
 setlocal indentkeys=!^F,o,O,e
 setlocal indentkeys+==elseif,=endif,=loop,=next,=enduntil,=endwhile
 
+<<<<<<< HEAD
 let b:undo_indent = "setl ai< inde< indk< si<"
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 if exists("*GetTeraTermIndent")
   finish
 endif

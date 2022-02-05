@@ -1,7 +1,11 @@
 " Vim indent file
 " Language:	occam
+<<<<<<< HEAD
 " Maintainer:	Mario Schweigler <ms44@kent.ac.uk> (Invalid email address)
 " 		Doug Kearns <dougkearns@gmail.com>
+=======
+" Maintainer:	Mario Schweigler <ms44@kent.ac.uk>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Last Change:	23 April 2003
 
 " Only load this indent file when no other was loaded.

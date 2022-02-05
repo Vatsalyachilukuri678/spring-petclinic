@@ -1,5 +1,9 @@
 package Net::HTTP;
+<<<<<<< HEAD
 our $VERSION = '6.22';
+=======
+our $VERSION = '6.21';
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 use strict;
 use warnings;
 
@@ -50,7 +54,11 @@ Net::HTTP - Low-level HTTP connection (client)
 
 =head1 VERSION
 
+<<<<<<< HEAD
 version 6.22
+=======
+version 6.21
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 =head1 SYNOPSIS
 
@@ -85,7 +93,11 @@ C<IO::Socket::INET>):
 
 =over
 
+<<<<<<< HEAD
 =item C<< $s = Net::HTTP->new( %options ) >>
+=======
+=item $s = Net::HTTP->new( %options )
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 The C<Net::HTTP> constructor method takes the same options as
 C<IO::Socket::INET>'s as well as these:
@@ -111,12 +123,20 @@ If unable to connect to the given HTTP server then the constructor
 returns C<undef> and $@ contains the reason.  After a successful
 connect, a C<Net:HTTP> object is returned.
 
+<<<<<<< HEAD
 =item C<< $s->host >>
+=======
+=item $s->host
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Get/set the default value of the C<Host> header to send.  The $host
 must not be set to an empty string (or C<undef>) for HTTP/1.1.
 
+<<<<<<< HEAD
 =item C<< $s->keep_alive >>
+=======
+=item $s->keep_alive
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Get/set the I<keep-alive> value.  If this value is TRUE then the
 request will be sent with headers indicating that the server should try
@@ -125,7 +145,11 @@ to keep the connection open so that multiple requests can be sent.
 The actual headers set will depend on the value of the C<http_version>
 and C<peer_http_version> attributes.
 
+<<<<<<< HEAD
 =item C<< $s->send_te >>
+=======
+=item $s->send_te
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Get/set the a value indicating if the request will be sent with a "TE"
 header to indicate the transfer encodings that the server can choose to
@@ -133,28 +157,48 @@ use.  The list of encodings announced as accepted by this client depends
 on availability of the following modules: C<Compress::Raw::Zlib> for
 I<deflate>, and C<IO::Compress::Gunzip> for I<gzip>.
 
+<<<<<<< HEAD
 =item C<< $s->http_version >>
+=======
+=item $s->http_version
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Get/set the HTTP version number that this client should announce.
 This value can only be set to "1.0" or "1.1".  The default is "1.1".
 
+<<<<<<< HEAD
 =item C<< $s->peer_http_version >>
+=======
+=item $s->peer_http_version
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Get/set the protocol version number of our peer.  This value will
 initially be "1.0", but will be updated by a successful
 read_response_headers() method call.
 
+<<<<<<< HEAD
 =item C<< $s->max_line_length >>
+=======
+=item $s->max_line_length
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Get/set a limit on the length of response line and response header
 lines.  The default is 8192.  A value of 0 means no limit.
 
+<<<<<<< HEAD
 =item C<< $s->max_header_length >>
+=======
+=item $s->max_header_length
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Get/set a limit on the number of header lines that a response can
 have.  The default is 128.  A value of 0 means no limit.
 
+<<<<<<< HEAD
 =item C<< $s->format_request($method, $uri, %headers, [$content]) >>
+=======
+=item $s->format_request($method, $uri, %headers, [$content])
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Format a request message and return it as a string.  If the headers do
 not include a C<Host> header, then a header is inserted with the value
@@ -165,16 +209,28 @@ C<keep_alive> attribute.
 If $content is given (and it is non-empty), then a C<Content-Length>
 header is automatically added unless it was already present.
 
+<<<<<<< HEAD
 =item C<< $s->write_request($method, $uri, %headers, [$content]) >>
+=======
+=item $s->write_request($method, $uri, %headers, [$content])
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Format and send a request message.  Arguments are the same as for
 format_request().  Returns true if successful.
 
+<<<<<<< HEAD
 =item C<< $s->format_chunk( $data ) >>
 
 Returns the string to be written for the given chunk of data.
 
 =item C<< $s->write_chunk($data) >>
+=======
+=item $s->format_chunk( $data )
+
+Returns the string to be written for the given chunk of data.
+
+=item $s->write_chunk($data)
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Will write a new chunk of request entity body data.  This method
 should only be used if the C<Transfer-Encoding> header with a value of
@@ -184,12 +240,20 @@ body data.
 
 Returns true if successful.
 
+<<<<<<< HEAD
 =item C<< $s->format_chunk_eof( %trailers ) >>
+=======
+=item $s->format_chunk_eof( %trailers )
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Returns the string to be written for signaling EOF when a
 C<Transfer-Encoding> of C<chunked> is used.
 
+<<<<<<< HEAD
 =item C<< $s->write_chunk_eof( %trailers ) >>
+=======
+=item $s->write_chunk_eof( %trailers )
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Will write eof marker for chunked data and optional trailers.  Note
 that trailers should not really be used unless is was signaled
@@ -197,7 +261,11 @@ with a C<Trailer> header.
 
 Returns true if successful.
 
+<<<<<<< HEAD
 =item C<< ($code, $mess, %headers) = $s->read_response_headers( %opts ) >>
+=======
+=item ($code, $mess, %headers) = $s->read_response_headers( %opts )
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Read response headers from server and return it.  The $code is the 3
 digit HTTP status code (see L<HTTP::Status>) and $mess is the textual
@@ -233,7 +301,11 @@ C<max_line_length> and C<max_header_length> checks are turned off,
 then no exception will be raised and this method will always
 return a response code.
 
+<<<<<<< HEAD
 =item C<< $n = $s->read_entity_body($buf, $size); >>
+=======
+=item $n = $s->read_entity_body($buf, $size);
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Reads chunks of the entity body content.  Basically the same interface
 as for read() and sysread(), but the buffer offset argument is not
@@ -252,19 +324,31 @@ you made the socket non-blocking.
 This method will raise exceptions (die) if the server does not speak
 proper HTTP.  This can only happen when reading chunked data.
 
+<<<<<<< HEAD
 =item C<< %headers = $s->get_trailers >>
+=======
+=item %headers = $s->get_trailers
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 After read_entity_body() has returned 0 to indicate end of the entity
 body, you might call this method to pick up any trailers.
 
+<<<<<<< HEAD
 =item C<< $s->_rbuf >>
+=======
+=item $s->_rbuf
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Get/set the read buffer content.  The read_response_headers() and
 read_entity_body() methods use an internal buffer which they will look
 for data before they actually sysread more from the socket itself.  If
 they read too much, the remaining data will be left in this buffer.
 
+<<<<<<< HEAD
 =item C<< $s->_rbuf_length >>
+=======
+=item $s->_rbuf_length
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Returns the number of bytes in the read buffer.  This should always be
 the same as:
@@ -294,7 +378,11 @@ Gisle Aas <gisle@activestate.com>
 
 =head1 COPYRIGHT AND LICENSE
 
+<<<<<<< HEAD
 This software is copyright (c) 2001 by Gisle Aas.
+=======
+This software is copyright (c) 2001-2017 by Gisle Aas.
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

@@ -1,5 +1,9 @@
 package Net::HTTP::Methods;
+<<<<<<< HEAD
 our $VERSION = '6.22';
+=======
+our $VERSION = '6.21';
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 use strict;
 use warnings;
 use URI;
@@ -655,7 +659,11 @@ Net::HTTP::Methods - Methods shared by Net::HTTP and Net::HTTPS
 
 =head1 VERSION
 
+<<<<<<< HEAD
 version 6.22
+=======
+version 6.21
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 =head1 AUTHOR
 
@@ -663,7 +671,11 @@ Gisle Aas <gisle@activestate.com>
 
 =head1 COPYRIGHT AND LICENSE
 
+<<<<<<< HEAD
 This software is copyright (c) 2001 by Gisle Aas.
+=======
+This software is copyright (c) 2001-2017 by Gisle Aas.
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

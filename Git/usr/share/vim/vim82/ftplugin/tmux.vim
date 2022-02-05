@@ -9,7 +9,10 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
+<<<<<<< HEAD
 let b:undo_ftplugin = "setlocal comments< commentstring<"
 
 setlocal comments=:#
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 setlocal commentstring=#\ %s

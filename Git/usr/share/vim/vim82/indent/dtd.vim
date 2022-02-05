@@ -1,15 +1,24 @@
 " Vim indent file
+<<<<<<< HEAD
 " Language:		DTD (Document Type Definition for XML)
 " Maintainer:		Doug Kearns <dougkearns@gmail.com>
 " Previous Maintainer:	Nikolai Weibull <now@bitwi.se>
 " Last Change:		24 Sep 2021
+=======
+" Language:    	    DTD (Document Type Definition for XML)
+" Previous Maintainer:  Nikolai Weibull <now@bitwi.se>
+" Latest Revision:      2011-07-08
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 setlocal indentexpr=GetDTDIndent()
 setlocal indentkeys=!^F,o,O,>
 setlocal nosmartindent
 
+<<<<<<< HEAD
 let b:undo_indent = "setl inde< indk< si<"
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 if exists("*GetDTDIndent")
   finish
 endif

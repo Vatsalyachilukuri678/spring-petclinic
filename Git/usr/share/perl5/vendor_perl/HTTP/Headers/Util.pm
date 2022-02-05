@@ -3,7 +3,11 @@ package HTTP::Headers::Util;
 use strict;
 use warnings;
 
+<<<<<<< HEAD
 our $VERSION = '6.36';
+=======
+our $VERSION = '6.33';
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 use Exporter 5.57 'import';
 
@@ -50,7 +54,11 @@ sub _split_header_words
 		push(@res, [@cur]) if @cur;
 		@cur = ();
 	    }
+<<<<<<< HEAD
 	    elsif (s/^\s*;// || s/^\s+// || s/^=//) {
+=======
+	    elsif (s/^\s*;// || s/^\s+//) {
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 		# continue
 	    }
 	    else {
@@ -103,7 +111,11 @@ HTTP::Headers::Util - Header value parsing utility functions
 
 =head1 VERSION
 
+<<<<<<< HEAD
 version 6.36
+=======
+version 6.33
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 =head1 SYNOPSIS
 

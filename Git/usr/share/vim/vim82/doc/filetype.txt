@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *filetype.txt*  For Vim version 8.2.  Last change: 2021 Sep 22
+=======
+*filetype.txt*  For Vim version 8.2.  Last change: 2021 Mar 11
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 
 		  VIM REFERENCE MANUAL    by Bram Moolenaar
@@ -545,6 +549,7 @@ One command, :DiffGitCached, is provided to show a diff of the current commit
 in the preview window.  It is equivalent to calling "git diff --cached" plus
 any arguments given to the command.
 
+<<<<<<< HEAD
 GPROF							*ft-gprof-plugin*
 
 The gprof filetype plugin defines a mapping <C-]> to jump from a function
@@ -553,6 +558,8 @@ to the details of that function in the call graph.
 
 The mapping can be disabled with: >
 	let g:no_gprof_maps = 1
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 MAIL							*ft-mail-plugin*
 

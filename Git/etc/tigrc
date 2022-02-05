@@ -93,6 +93,7 @@ set truncation-delimiter	= ~		# Character drawn for truncations, or "utf-8"
 
 # Format reference names based on type.
 #  - head		: The current HEAD.
+<<<<<<< HEAD
 #  - tag		: An annotated tag.
 #  - local-tag		: A lightweight tag.
 #  - remote		: A remote.
@@ -101,6 +102,14 @@ set truncation-delimiter	= ~		# Character drawn for truncations, or "utf-8"
 #  - branch		: A branch.
 #  - stash		: The stash.
 #  - other		: Any other reference.
+=======
+#  - tag		: A signed tag.
+#  - local-tag		: An unsigned tag.
+#  - remote		: A remote.
+#  - tracked-remote	: The remote tracked by current HEAD.
+#  - replace		: A replaced reference.
+#  - branch		: Any other reference.
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 # If no format is defined for `local-tag` then the one for `tag` is used.
 # Similarly, `remote` is used if no `tracked-remote` format exists.
 # Prefix with `hide:` to not show that reference type, e.g. `hide:remote`.
@@ -311,8 +320,12 @@ bind generic	$	:toggle commit-title-overflow
 # bind generic	???	:toggle status-show-untracked-dirs
 						# Toggle display of file in untracked directories
 # bind generic	???	:toggle vertical-split	# Toggle vertical split
+<<<<<<< HEAD
 bind generic	%	:toggle file-filter	# Toggle filtering by pathspecs in file-args
 bind generic	^	:toggle rev-filter	# Toggle filtering by revisions in rev-args
+=======
+bind generic	%	:toggle file-filter
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 # Misc
 bind generic	e	edit			# Open in editor
@@ -378,6 +391,7 @@ color "parent "			blue	default
 color "tree "			blue	default
 color "author "			green	default
 color "committer "		magenta	default
+<<<<<<< HEAD
 color "    Signed-off-by:"	yellow	default
 color "    Acked-by:"		yellow	default
 color "    Reviewed-by:"	yellow	default
@@ -396,6 +410,12 @@ color "    Co-authored-by:"	yellow	default
 color "    Requested-by:"	yellow	default
 color "    Original-patch-by:"	yellow	default
 color "    Inspired-by:"	yellow	default
+=======
+color "    Signed-off-by"	yellow	default
+color "    Acked-by"		yellow	default
+color "    Tested-by"		yellow	default
+color "    Reviewed-by"		yellow	default
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 color default			default	default	normal
 color cursor			white	green	bold
 color status			green	default

@@ -1,16 +1,27 @@
 " Vim syntax file
 " Language: Syntax for Gprof Output
 " Maintainer: Dominique Pelle <dominique.pelle@gmail.com>
+<<<<<<< HEAD
 " Last Change: 2021 Sep 19
 
 " Quit when a syntax file was already loaded
 if exists("b:current_syntax")
   finish
+=======
+" Last Change: 2021 Apr 08
+
+" Quit when a syntax file was already loaded
+if exists("b:current_syntax")
+	finish
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 endif
 let s:keepcpo= &cpo
 set cpo&vim
 
+<<<<<<< HEAD
 syn spell notoplevel
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn case match
 syn sync minlines=100
 

@@ -2,7 +2,11 @@
 " Language:     Debian sources.list
 " Maintainer:   Debian Vim Maintainers
 " Former Maintainer: Matthijs Mohlmann <matthijs@cacholong.nl>
+<<<<<<< HEAD
 " Last Change: 2021 Oct 19
+=======
+" Last Change: 2021 Aug 03
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " URL: https://salsa.debian.org/vim-team/vim-debian/blob/master/syntax/debsources.vim
 
 " Standard syntax initialization
@@ -26,8 +30,12 @@ let s:supported = [
       \ 'jessie', 'stretch', 'buster', 'bullseye', 'bookworm',
       \ 'trixie', 'sid', 'rc-buggy',
       \
+<<<<<<< HEAD
       \ 'trusty', 'xenial', 'bionic', 'focal', 'hirsute', 'impish', 'jammy',
       \ 'devel'
+=======
+      \ 'trusty', 'xenial', 'bionic', 'focal', 'hirsute', 'impish', 'devel'
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
       \ ]
 let s:unsupported = [
       \ 'buzz', 'rex', 'bo', 'hamm', 'slink', 'potato',

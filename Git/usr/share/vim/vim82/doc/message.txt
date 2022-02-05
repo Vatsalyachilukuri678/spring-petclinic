@@ -141,11 +141,14 @@ larger.  When it's more there probably is an endless loop.  Probably a
 The color name {name} is unknown.  See |gui-colors| for a list of colors that
 are available on most systems.
 
+<<<<<<< HEAD
 							*E1244*  >
   Bad color string: {str}
 
 The provided color did not conform to the pattern #rrggbb
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 							*E458*  >
   Cannot allocate colormap entry, some colors may be incorrect
 

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *intro.txt*     For Vim version 8.2.  Last change: 2021 Sep 29
+=======
+*intro.txt*     For Vim version 8.2.  Last change: 2020 Dec 29
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 
 		  VIM REFERENCE MANUAL    by Bram Moolenaar
@@ -421,6 +425,10 @@ notation	meaning		    equivalent	decimal value(s)	~
 <Tab>		tab			CTRL-I	  9	*tab* *Tab*
 							*linefeed*
 <NL>		linefeed		CTRL-J	 10 (used for <Nul>)
+<<<<<<< HEAD
+=======
+<FF>		formfeed		CTRL-L	 12	*formfeed*
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <CR>		carriage return		CTRL-M	 13	*carriage-return*
 <Return>	same as <CR>				*<Return>*
 <Enter>		same as <CR>				*<Enter>*

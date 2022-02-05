@@ -1,6 +1,10 @@
 #! /bin/sh
 
+<<<<<<< HEAD
 prefix="$(cygpath -m "/mingw64")"
+=======
+prefix=/mingw64
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 exec_prefix=${prefix}
 includedir=${prefix}/include
 libdir=${exec_prefix}/lib
@@ -86,7 +90,11 @@ while test $# -gt 0; do
             shift
             libs="-lxml2"
         else
+<<<<<<< HEAD
             libs="-lxml2 -L${libdir} -lz -L${libdir} -llzma   -liconv    "
+=======
+            libs="-lxml2 -L${libdir} -lz  -L${libdir} -llzma    -liconv    "
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
         fi
 
         if [ "-L${libdir}" != "-L/usr/lib" -a "-L${libdir}" != "-L/usr/lib64" ]; then

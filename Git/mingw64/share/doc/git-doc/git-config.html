@@ -448,6 +448,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_synopsis">SYNOPSIS</h2>
 <div class="sectionbody">
 <div class="verseblock">
+<<<<<<< HEAD
 <pre class="content"><em>git config</em> [&lt;file-option&gt;] [--type=&lt;type&gt;] [--fixed-value] [--show-origin] [--show-scope] [-z|--null] &lt;name&gt; [&lt;value&gt; [&lt;value-pattern&gt;]]
 <em>git config</em> [&lt;file-option&gt;] [--type=&lt;type&gt;] --add &lt;name&gt; &lt;value&gt;
 <em>git config</em> [&lt;file-option&gt;] [--type=&lt;type&gt;] [--fixed-value] --replace-all &lt;name&gt; &lt;value&gt; [&lt;value-pattern&gt;]
@@ -462,6 +463,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <em>git config</em> [&lt;file-option&gt;] [--show-origin] [--show-scope] [-z|--null] [--name-only] -l | --list
 <em>git config</em> [&lt;file-option&gt;] --get-color &lt;name&gt; [&lt;default&gt;]
 <em>git config</em> [&lt;file-option&gt;] --get-colorbool &lt;name&gt; [&lt;stdout-is-tty&gt;]
+=======
+<pre class="content"><em>git config</em> [&lt;file-option&gt;] [--type=&lt;type&gt;] [--fixed-value] [--show-origin] [--show-scope] [-z|--null] name [value [value-pattern]]
+<em>git config</em> [&lt;file-option&gt;] [--type=&lt;type&gt;] --add name value
+<em>git config</em> [&lt;file-option&gt;] [--type=&lt;type&gt;] [--fixed-value] --replace-all name value [value-pattern]
+<em>git config</em> [&lt;file-option&gt;] [--type=&lt;type&gt;] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] --get name [value-pattern]
+<em>git config</em> [&lt;file-option&gt;] [--type=&lt;type&gt;] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] --get-all name [value-pattern]
+<em>git config</em> [&lt;file-option&gt;] [--type=&lt;type&gt;] [--show-origin] [--show-scope] [-z|--null] [--fixed-value] [--name-only] --get-regexp name_regex [value-pattern]
+<em>git config</em> [&lt;file-option&gt;] [--type=&lt;type&gt;] [-z|--null] --get-urlmatch name URL
+<em>git config</em> [&lt;file-option&gt;] [--fixed-value] --unset name [value-pattern]
+<em>git config</em> [&lt;file-option&gt;] [--fixed-value] --unset-all name [value-pattern]
+<em>git config</em> [&lt;file-option&gt;] --rename-section old_name new_name
+<em>git config</em> [&lt;file-option&gt;] --remove-section name
+<em>git config</em> [&lt;file-option&gt;] [--show-origin] [--show-scope] [-z|--null] [--name-only] -l | --list
+<em>git config</em> [&lt;file-option&gt;] --get-color name [default]
+<em>git config</em> [&lt;file-option&gt;] --get-colorbool name [stdout-is-tty]
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <em>git config</em> [&lt;file-option&gt;] -e | --edit</pre>
 </div>
 </div>
@@ -577,10 +594,17 @@ case-sensitive and done against a canonicalized version of the key
 in which section and variable names are lowercased, but subsection
 names are not.</p>
 </dd>
+<<<<<<< HEAD
 <dt class="hdlist1">--get-urlmatch &lt;name&gt; &lt;URL&gt;</dt>
 <dd>
 <p>When given a two-part name section.key, the value for
 section.&lt;URL&gt;.key whose &lt;URL&gt; part matches the best to the
+=======
+<dt class="hdlist1">--get-urlmatch name URL</dt>
+<dd>
+<p>When given a two-part name section.key, the value for
+section.&lt;url&gt;.key whose &lt;url&gt; part matches the best to the
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 given URL is returned (if no such key exists, the value for
 section.key is used as a fallback).  When given just the
 section as name, do so for all the keys in the section and
@@ -631,8 +655,13 @@ from all available files.</p>
 read from or written to if <code>extensions.worktreeConfig</code> is
 present. If not it&#8217;s the same as <code>--local</code>.</p>
 </dd>
+<<<<<<< HEAD
 <dt class="hdlist1">-f &lt;config-file&gt;</dt>
 <dt class="hdlist1">--file &lt;config-file&gt;</dt>
+=======
+<dt class="hdlist1">-f config-file</dt>
+<dt class="hdlist1">--file config-file</dt>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <dd>
 <p>For writing options: write to the specified file rather than the
 repository <code>.git/config</code>.</p>
@@ -644,7 +673,11 @@ available files.</p>
 <p>See also <a href="#FILES">FILES</a>.</p>
 </div>
 </dd>
+<<<<<<< HEAD
 <dt class="hdlist1">--blob &lt;blob&gt;</dt>
+=======
+<dt class="hdlist1">--blob blob</dt>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <dd>
 <p>Similar to <code>--file</code> but use the given blob instead of a file. E.g.
 you can use <em>master:.gitmodules</em> to read values from the file
@@ -764,18 +797,31 @@ applicable).</p>
 all queried config options with the scope of that value
 (local, global, system, command).</p>
 </dd>
+<<<<<<< HEAD
 <dt class="hdlist1">--get-colorbool &lt;name&gt; [&lt;stdout-is-tty&gt;]</dt>
 <dd>
 <p>Find the color setting for <code>&lt;name&gt;</code> (e.g. <code>color.diff</code>) and output
 "true" or "false".  <code>&lt;stdout-is-tty&gt;</code> should be either "true" or
 "false", and is taken into account when configuration says
 "auto".  If <code>&lt;stdout-is-tty&gt;</code> is missing, then checks the standard
+=======
+<dt class="hdlist1">--get-colorbool name [stdout-is-tty]</dt>
+<dd>
+<p>Find the color setting for <code>name</code> (e.g. <code>color.diff</code>) and output
+"true" or "false".  <code>stdout-is-tty</code> should be either "true" or
+"false", and is taken into account when configuration says
+"auto".  If <code>stdout-is-tty</code> is missing, then checks the standard
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 output of the command itself, and exits with status 0 if color
 is to be used, or exits with status 1 otherwise.
 When the color setting for <code>name</code> is undefined, the command uses
 <code>color.ui</code> as fallback.</p>
 </dd>
+<<<<<<< HEAD
 <dt class="hdlist1">--get-color &lt;name&gt; [&lt;default&gt;]</dt>
+=======
+<dt class="hdlist1">--get-color name [default]</dt>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <dd>
 <p>Find the color configured for <code>name</code> (e.g. <code>color.diff.new</code>) and
 output it as the ANSI color escape sequence to the standard
@@ -1422,6 +1468,7 @@ be suffixed with <code>k</code>, <code>M</code>,&#8230;&#8203; to mean "scale th
 colors (at most two, one for foreground and one for background)
 and attributes (as many as you want), separated by spaces.</p>
 <div class="paragraph">
+<<<<<<< HEAD
 <p>The basic colors accepted are <code>normal</code>, <code>black</code>, <code>red</code>, <code>green</code>,
 <code>yellow</code>, <code>blue</code>, <code>magenta</code>, <code>cyan</code>, <code>white</code> and <code>default</code>.  The first
 color given is the foreground; the second is the background.  All the
@@ -1437,6 +1484,13 @@ background color alone (for example, "normal red").</p>
 <p>The color <code>default</code> explicitly resets the color to the terminal default,
 for example to specify a cleared background. Although it varies between
 terminals, this is usually not the same as setting to "white black".</p>
+=======
+<p>The basic colors accepted are <code>normal</code>, <code>black</code>, <code>red</code>, <code>green</code>, <code>yellow</code>,
+<code>blue</code>, <code>magenta</code>, <code>cyan</code> and <code>white</code>.  The first color given is the
+foreground; the second is the background.  All the basic colors except
+<code>normal</code> have a bright variant that can be specified by prefixing the
+color with <code>bright</code>, like <code>brightred</code>.</p>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </div>
 <div class="paragraph">
 <p>Colors may also be given as numbers between 0 and 255; these use ANSI
@@ -1453,12 +1507,15 @@ be turned off by prefixing them with <code>no</code> or <code>no-</code> (e.g., 
 <code>no-ul</code>, etc).</p>
 </div>
 <div class="paragraph">
+<<<<<<< HEAD
 <p>The pseudo-attribute <code>reset</code> resets all colors and attributes before
 applying the specified coloring. For example, <code>reset green</code> will result
 in a green foreground and default background without any active
 attributes.</p>
 </div>
 <div class="paragraph">
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <p>An empty color string produces no color effect at all. This can be used
 to avoid coloring specific elements without disabling color entirely.</p>
 </div>
@@ -2662,8 +2719,12 @@ this behavior can be chosen per-branch using the <code>--track</code>
 and <code>--no-track</code> options. The valid settings are: <code>false</code>&#8201;&#8212;&#8201;no
 automatic setup is done; <code>true</code>&#8201;&#8212;&#8201;automatic setup is done when the
 starting point is a remote-tracking branch; <code>always</code>&#8201;&#8212;&#8201;automatic setup is done when the starting point is either a
+<<<<<<< HEAD
 local branch or remote-tracking branch; <code>inherit</code>&#8201;&#8212;&#8201;if the starting point
 has a tracking configuration, it is copied to the new
+=======
+local branch or remote-tracking
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 branch. This option defaults to true.</p>
 </dd>
 <dt class="hdlist1">branch.autoSetupRebase</dt>
@@ -4435,8 +4496,12 @@ access method.</p>
 <p>Set the default matching behavior. Using a value of <em>basic</em>, <em>extended</em>,
 <em>fixed</em>, or <em>perl</em> will enable the <code>--basic-regexp</code>, <code>--extended-regexp</code>,
 <code>--fixed-strings</code>, or <code>--perl-regexp</code> option accordingly, while the
+<<<<<<< HEAD
 value <em>default</em> will use the <code>grep.extendedRegexp</code> option to choose
 between <em>basic</em> and <em>extended</em>.</p>
+=======
+value <em>default</em> will return to the default matching behavior.</p>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </dd>
 <dt class="hdlist1">grep.extendedRegexp</dt>
 <dd>
@@ -4507,6 +4572,7 @@ in increasing order of significance:</p>
 </ul>
 </div>
 </dd>
+<<<<<<< HEAD
 <dt class="hdlist1">gpg.ssh.defaultKeyCommand</dt>
 <dd>
 <p>This command that will be run when user.signingkey is not set and a ssh
@@ -4514,12 +4580,29 @@ signature is requested. On successful exit a valid ssh public key is
 expected in the	first line of its output. To automatically use the first
 available key from your ssh-agent set this to "ssh-add -L".</p>
 </dd>
+=======
+</dl>
+</div>
+<div class="paragraph">
+<p>gpg.ssh.defaultKeyCommand:
+	This command that will be run when user.signingkey is not set and a ssh
+	signature is requested. On successful exit a valid ssh public key is
+	expected in the	first line of its output. To automatically use the first
+	available key from your ssh-agent set this to "ssh-add -L".</p>
+</div>
+<div class="dlist">
+<dl>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <dt class="hdlist1">gpg.ssh.allowedSignersFile</dt>
 <dd>
 <p>A file containing ssh public keys which you are willing to trust.
 The file consists of one or more lines of principals followed by an ssh
 public key.
+<<<<<<< HEAD
 e.g.: <code>user1@example.com,user2@example.com ssh-rsa AAAAX1...</code>
+=======
+e.g.: <a href="mailto:user1@example.com">user1@example.com</a>,<a href="mailto:user2@example.com">user2@example.com</a> ssh-rsa AAAAX1&#8230;&#8203;
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 See ssh-keygen(1) "ALLOWED SIGNERS" for details.
 The principal is only used to identify the key and is available when
 verifying a signature.</p>
@@ -4542,12 +4625,15 @@ in the repository itself using a path relative to the top-level of the working t
 This way only committers with an already valid key can add or change keys in the keyring.</p>
 </div>
 <div class="paragraph">
+<<<<<<< HEAD
 <p>Since OpensSSH 8.8 this file allows specifying a key lifetime using valid-after &amp;
 valid-before options. Git will mark signatures as valid if the signing key was
 valid at the time of the signatures creation. This allows users to change a
 signing key without invalidating all previously made signatures.</p>
 </div>
 <div class="paragraph">
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <p>Using a SSH CA key with the cert-authority option
 (see ssh-keygen(1) "CERTIFICATES") is also valid.</p>
 </div>
@@ -5512,6 +5598,7 @@ working tree files upon merge.  The default is "merge", which
 shows a <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> conflict marker, changes made by one side,
 a <code>=======</code> marker, changes made by the other side, and then
 a <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> marker.  An alternate style, "diff3", adds a <code>|||||||</code>
+<<<<<<< HEAD
 marker and the original text before the <code>=======</code> marker.  The
 "merge" style tends to produce smaller conflict regions than diff3,
 both because of the exclusion of the original text, and because
@@ -5520,6 +5607,9 @@ out of the conflict region.  Another alternate style, "zdiff3", is
 similar to diff3 but removes matching lines on the two sides from
 the conflict region when those matching lines appear near either
 the beginning or end of a conflict region.</p>
+=======
+marker and the original text before the <code>=======</code> marker.</p>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </dd>
 <dt class="hdlist1">merge.defaultToUpstream</dt>
 <dd>
@@ -7669,6 +7759,7 @@ key you want it to automatically when creating a signed tag or
 commit, you can override the default selection with this variable.
 This option is passed unchanged to gpg&#8217;s --local-user parameter,
 so you may specify a key using any method that gpg supports.
+<<<<<<< HEAD
 If gpg.format is set to <code>ssh</code> this can contain the path to either
 your private ssh key or the public key when ssh-agent is used.
 Alternatively it can contain a public key prefixed with <code>key::</code>
@@ -7679,6 +7770,15 @@ first key available. For backward compatibility, a raw key which
 begins with "ssh-", such as "ssh-rsa XXXXXX identifier", is treated
 as "key::ssh-rsa XXXXXX identifier", but this form is deprecated;
 use the <code>key::</code> form instead.</p>
+=======
+If gpg.format is set to "ssh" this can contain the literal ssh public
+key (e.g.: "ssh-rsa XXXXXX identifier") or a file which contains it and
+corresponds to the private key used for signing. The private key
+needs to be available via ssh-agent. Alternatively it can be set to
+a file containing a private key directly. If not set git will call
+gpg.ssh.defaultKeyCommand (e.g.: "ssh-add -L") and try to use the first
+key available.</p>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </dd>
 <dt class="hdlist1">versionsort.prereleaseSuffix (deprecated)</dt>
 <dd>
@@ -7778,7 +7878,11 @@ looks like</p>
 </div>
 <div id="footer">
 <div id="footer-text">
+<<<<<<< HEAD
 Last updated 2022-02-01 15:47:52 UTC
+=======
+Last updated 2021-11-25 10:48:06 UTC
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </div>
 </div>
 </body>

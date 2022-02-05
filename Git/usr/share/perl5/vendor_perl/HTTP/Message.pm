@@ -3,7 +3,11 @@ package HTTP::Message;
 use strict;
 use warnings;
 
+<<<<<<< HEAD
 our $VERSION = '6.36';
+=======
+our $VERSION = '6.33';
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 require HTTP::Headers;
 require Carp;
@@ -801,7 +805,11 @@ HTTP::Message - HTTP style message (base class)
 
 =head1 VERSION
 
+<<<<<<< HEAD
 version 6.36
+=======
+version 6.33
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 =head1 SYNOPSIS
 
@@ -905,6 +913,7 @@ for details about how charset is determined.
 
 =item $mess->decoded_content( %options )
 
+<<<<<<< HEAD
 Returns the content with any C<Content-Encoding> undone and, for textual content
 (C<Content-Type> values starting with C<text/>, exactly matching
 C<application/xml>, or ending with C<+xml>), the raw content's character set
@@ -913,6 +922,11 @@ L<does not currently|https://github.com/libwww-perl/HTTP-Message/pull/99>
 attempt to decode declared character sets for any other content types like
 C<application/json> or C<application/javascript>.  If the C<Content-Encoding>
 or C<charset> of the message is unknown, this method will fail by returning
+=======
+Returns the content with any C<Content-Encoding> undone and for textual content
+the raw content encoded to Perl's Unicode strings.  If the C<Content-Encoding>
+or C<charset> of the message is unknown this method will fail by returning
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 C<undef>.
 
 The following options can be specified.

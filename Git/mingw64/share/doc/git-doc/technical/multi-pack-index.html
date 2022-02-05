@@ -470,17 +470,24 @@ and their offsets into multiple packfiles. It contains:</p>
 </li>
 <li>
 <p>A list of metadata for the ith object ID including:</p>
+<<<<<<< HEAD
 <div class="ulist">
 <ul>
+=======
+</li>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <li>
 <p>A value j referring to the jth packfile.</p>
 </li>
 <li>
 <p>An offset within the jth packfile for the object.</p>
 </li>
+<<<<<<< HEAD
 </ul>
 </div>
 </li>
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <li>
 <p>If large offsets are required, we use another list of large
 offsets similar to version 2 pack-indexes.</p>
@@ -570,6 +577,15 @@ pack maintenance in a multi-pack environment. It may also be
 helpful to organize packfiles by object type (commit, tree, blob,
 etc.) and use this metadata to help that maintenance.</p>
 </li>
+<<<<<<< HEAD
+=======
+<li>
+<p>The partial clone feature records special "promisor" packs that
+may point to objects that are not stored locally, but available
+on request to a server. The multi-pack-index does not currently
+track these promisor packs.</p>
+</li>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </ul>
 </div>
 </div>
@@ -594,7 +610,11 @@ etc.) and use this metadata to help that maintenance.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
+<<<<<<< HEAD
 Last updated 2022-02-01 15:47:52 UTC
+=======
+Last updated 2021-11-25 10:48:06 UTC
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </div>
 </div>
 </body>

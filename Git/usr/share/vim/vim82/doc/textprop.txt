@@ -160,7 +160,11 @@ prop_add({lnum}, {col}, {props})
 
 		Can also be used as a |method|: >
 			GetLnum()->prop_add(col, props)
+<<<<<<< HEAD
 <
+=======
+
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 						*prop_add_list()*
 prop_add_list({props}, [[{lnum}, {col}, {end-lnum}, {end-col}], ...])
 		Similar to prop_add(), but attaches a text property at

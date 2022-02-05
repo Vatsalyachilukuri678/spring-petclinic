@@ -455,9 +455,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
          [--exclude=&lt;path&gt;] [--include=&lt;path&gt;] [--reject] [-q | --quiet]
          [--[no-]scissors] [-S[&lt;keyid&gt;]] [--patch-format=&lt;format&gt;]
          [--quoted-cr=&lt;action&gt;]
+<<<<<<< HEAD
          [--empty=(stop|drop|keep)]
          [(&lt;mbox&gt; | &lt;Maildir&gt;)&#8230;&#8203;]
 <em>git am</em> (--continue | --skip | --abort | --quit | --show-current-patch[=(diff|raw)] | --allow-empty)</pre>
+=======
+         [(&lt;mbox&gt; | &lt;Maildir&gt;)&#8230;&#8203;]
+<em>git am</em> (--continue | --skip | --abort | --quit | --show-current-patch[=(diff|raw)])</pre>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </div>
 </div>
 </div>
@@ -520,6 +525,7 @@ the <code>mailinfo.scissors</code> configuration variable.</p>
 <dd>
 <p>This flag will be passed down to <em>git mailinfo</em> (see <a href="git-mailinfo.html">git-mailinfo(1)</a>).</p>
 </dd>
+<<<<<<< HEAD
 <dt class="hdlist1">--empty=(stop|drop|keep)</dt>
 <dd>
 <p>By default, or when the option is set to <em>stop</em>, the command
@@ -529,6 +535,8 @@ option is set to <em>drop</em>, skip such an e-mail message instead.
 When this option is set to <em>keep</em>, create an empty commit,
 recording the contents of the e-mail message as its log.</p>
 </dd>
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <dt class="hdlist1">-m</dt>
 <dt class="hdlist1">--message-id</dt>
 <dd>
@@ -677,12 +685,15 @@ conflicts.  If <code>raw</code> is specified, show the raw contents of
 the e-mail message; if <code>diff</code>, show the diff portion only.
 Defaults to <code>raw</code>.</p>
 </dd>
+<<<<<<< HEAD
 <dt class="hdlist1">--allow-empty</dt>
 <dd>
 <p>After a patch failure on an input e-mail message lacking a patch,
 create an empty commit with the contents of the e-mail message
 as its log message.</p>
 </dd>
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </dl>
 </div>
 </div>
@@ -791,7 +802,11 @@ information.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
+<<<<<<< HEAD
 Last updated 2022-02-01 15:47:52 UTC
+=======
+Last updated 2021-11-25 10:48:06 UTC
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </div>
 </div>
 </body>

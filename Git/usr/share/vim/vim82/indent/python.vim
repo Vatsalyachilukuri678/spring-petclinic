@@ -2,7 +2,11 @@
 " Language:		Python
 " Maintainer:		Bram Moolenaar <Bram@vim.org>
 " Original Author:	David Bustos <bustos@caltech.edu>
+<<<<<<< HEAD
 " Last Change:		2021 Sep 26
+=======
+" Last Change:		2021 May 26
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Only load this indent file when no other was loaded.
 if exists("b:did_indent")
@@ -17,8 +21,11 @@ setlocal autoindent	" indentexpr isn't much help otherwise
 setlocal indentexpr=GetPythonIndent(v:lnum)
 setlocal indentkeys+=<:>,=elif,=except
 
+<<<<<<< HEAD
 let b:undo_indent = "setl ai< inde< indk< lisp<"
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Only define the function once.
 if exists("*GetPythonIndent")
   finish

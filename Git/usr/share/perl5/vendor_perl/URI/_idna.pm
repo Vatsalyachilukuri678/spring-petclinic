@@ -9,7 +9,11 @@ use warnings;
 use URI::_punycode qw(decode_punycode encode_punycode);
 use Carp qw(croak);
 
+<<<<<<< HEAD
 our $VERSION = '5.10';
+=======
+our $VERSION = '5.09';
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 BEGIN {
   *URI::_idna::_ENV_::JOIN_LEAKS_UTF8_FLAGS = "$]" < 5.008_003

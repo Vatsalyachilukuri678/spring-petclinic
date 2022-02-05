@@ -803,7 +803,11 @@ three lines: >
 		3:d<CR>		is translated into: .,.+2d<CR>
 <
 
+<<<<<<< HEAD
 Visual Mode and Range
+=======
+Visual Mode and Range					
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 							*v_:*
 {Visual}:	Starts a command-line with the Visual selected lines as a
 		range.  The code `:'<,'>` is used for this range, which makes

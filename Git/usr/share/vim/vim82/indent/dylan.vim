@@ -1,9 +1,15 @@
 " Vim indent file
 " Language:	Dylan
+<<<<<<< HEAD
 " Maintainer:	Brent A. Fulgham <bfulgham@debian.org> (Invalid email address)
 " 		Doug Kearns <dougkearns@gmail.com>
 " Version:	0.01
 " Last Change:	2017 Jun 13
+=======
+" Version:	0.01
+" Last Change:	2017 Jun 13
+" Maintainer:	Brent A. Fulgham <bfulgham@debian.org>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Only load this indent file when no other was loaded.
 if exists("b:did_indent")

@@ -1,8 +1,14 @@
 " PostScript indent file
+<<<<<<< HEAD
 " Language:	PostScript
 " Maintainer:	Mike Williams <mrw@netcomuk.co.uk> (Invalid email address)
 " 		Doug Kearns <dougkearns@gmail.com>
 " Last Change:	2nd July 2001
+=======
+" Language:    PostScript
+" Maintainer:  Mike Williams <mrw@netcomuk.co.uk>
+" Last Change: 2nd July 2001
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 "
 
 " Only load this indent file when no other was loaded.

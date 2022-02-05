@@ -227,14 +227,24 @@ Vim evaluation and command execution, and others.
                                                         *lua-vim-variables*
 The Vim editor global dictionaries |g:| |w:| |b:| |t:| |v:| can be accessed
 from Lua conveniently and idiomatically by referencing the `vim.*` Lua tables
+<<<<<<< HEAD
 described below. In this way you can easily read and modify global Vim script
+=======
+described below. In this way you can easily read and modify global Vimscript
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 variables from Lua.
 
 Example: >
 
+<<<<<<< HEAD
     vim.g.foo = 5     -- Set the g:foo Vim script variable.
     print(vim.g.foo)  -- Get and print the g:foo Vim script variable.
     vim.g.foo = nil   -- Delete (:unlet) the Vim script variable.
+=======
+    vim.g.foo = 5     -- Set the g:foo Vimscript variable.
+    print(vim.g.foo)  -- Get and print the g:foo Vimscript variable.
+    vim.g.foo = nil   -- Delete (:unlet) the Vimscript variable.
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 vim.g                                                   *vim.g*
         Global (|g:|) editor variables.

@@ -88,7 +88,10 @@ Tuning Vim ~
 |usr_43.txt|  Using filetypes
 |usr_44.txt|  Your own syntax highlighted
 |usr_45.txt|  Select your language
+<<<<<<< HEAD
 |usr_46.txt|  Write plugins using Vim9 script
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Making Vim Run ~
 |usr_90.txt|  Installing Vim

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *autocmd.txt*   For Vim version 8.2.  Last change: 2021 Oct 04
+=======
+*autocmd.txt*   For Vim version 8.2.  Last change: 2021 Aug 01
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 
 		  VIM REFERENCE MANUAL    by Bram Moolenaar
@@ -708,7 +712,11 @@ EncodingChanged			Fires off after the 'encoding' option has been
 							*FileAppendCmd*
 FileAppendCmd			Before appending to a file.  Should do the
 				appending to the file.  Use the '[ and ']
+<<<<<<< HEAD
 				marks for the range of lines. |Cmd-event|
+=======
+				marks for the range of lines.|Cmd-event|
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 							*FileAppendPost*
 FileAppendPost			After appending to a file.
 							*FileAppendPre*
@@ -836,7 +844,11 @@ FilterReadPre			Before reading a file from a filter command.
 							*FilterWritePost*
 FilterWritePost			After writing a file for a filter command or
 				making a diff with an external diff (see
+<<<<<<< HEAD
 				|DiffUpdated| for internal diff).
+=======
+				DiffUpdated for internal diff).
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 				Vim checks the pattern against the name of
 				the current buffer as with FilterWritePre.
 				Not triggered when 'shelltemp' is off.
@@ -930,6 +942,7 @@ MenuPopup			Just before showing the popup menu (under the
 							*ModeChanged*
 ModeChanged			After changing the mode. The pattern is
 				matched against `'old_mode:new_mode'`, for
+<<<<<<< HEAD
 				example match against `*:c*` to simulate
 				|CmdlineEnter|.
 				The following values of |v:event| are set:
@@ -947,6 +960,20 @@ ModeChanged			After changing the mode. The pattern is
 	:au ModeChanged [vV\x16]*:* let &l:rnu = mode() =~# '^[vV\x16]'
 	:au ModeChanged *:[vV\x16]* let &l:rnu = mode() =~# '^[vV\x16]'
 	:au WinEnter,WinLeave * let &l:rnu = mode() =~# '^[vV\x16]'
+=======
+				example match against `i:*` to simulate
+				|InsertLeave|.
+				The following values of |v:event| are set:
+				   old_mode	The mode before it changed.
+				   new_mode	The new mode as also returned
+						by |mode()|.
+				When ModeChanged is triggered, old_mode will
+				have the value of new_mode when the event was
+				last triggered.
+				Usage example to use relative line numbers
+				when entering visual mode: >
+	:autocmd ModeChanged *:v set relativenumber
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <							*OptionSet*
 OptionSet			After setting an option.  The pattern is
 				matched against the long option name.
@@ -1200,9 +1227,15 @@ TextYankPost			After text has been yanked or deleted in the
 						register, as a list of lines,
 						like with: >
 						getreg(r, 1, 1)
+<<<<<<< HEAD
 <				   regname	Name of the register or empty
 						string for the unnamed
 						register, see |registers|.
+=======
+<				   regname	Name of the |register| or
+						empty string for the unnamed
+						register.
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 				   regtype	Type of the register, see
 						|getregtype()|.
 				   visual	True if the operation is
@@ -1507,6 +1540,7 @@ Example: >
 This prevents having the autocommands defined twice (e.g., after sourcing the
 .vimrc file again).
 
+<<<<<<< HEAD
 						*FileExplorer*
 There is one group that is recognized by Vim: FileExplorer.  If this group
 exists Vim assumes that editing a directory is possible and will trigger a
@@ -1514,6 +1548,8 @@ plugin that lists the files in that directory.  This is used by the |netrw|
 plugin.  This allows you to do: >
 	browse edit
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 ==============================================================================
 9. Executing autocommands				*autocmd-execute*
 

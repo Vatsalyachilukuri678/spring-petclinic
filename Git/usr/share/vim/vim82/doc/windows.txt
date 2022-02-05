@@ -1358,7 +1358,10 @@ directory	Displays directory contents.  Can be used by a file explorer
 <		The buffer name is the name of the directory and is adjusted
 		when using the |:cd| command.
 
+<<<<<<< HEAD
 						*scratch-buffer*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 scratch		Contains text that can be discarded at any time.  It is kept
 		when closing the window, it must be deleted explicitly.
 		Settings: >

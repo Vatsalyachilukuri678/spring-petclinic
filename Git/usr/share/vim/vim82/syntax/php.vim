@@ -1,7 +1,11 @@
 " Vim syntax file
 " Language: php PHP 3/4/5/7/8
 " Maintainer: Tyson Andre <tysonandre775@hotmail.com>
+<<<<<<< HEAD
 " Last Change: Sep 18, 2021
+=======
+" Last Change: Dec 22, 2020
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " URL: https://github.com/TysonAndre/php-vim-syntax
 " Former Maintainers: 
 "         Jason Woofenden <jason@jasonwoof.com>
@@ -13,6 +17,7 @@
 "       than the default colourscheme, because elflord's colours will better
 "       highlight the break-points (Statements) in your code.
 "
+<<<<<<< HEAD
 " Note: This embeds a modified copy of the html.vim with (mostly) different symbols,
 " in order to implement php_htmlInStrings=2 can work as expected and correctly parse
 " `<?php $phpStartTag = '<?php';`.
@@ -26,10 +31,13 @@
 "			Included patch #7900 to fix comments
 "			Included patch #7916 to fix a few more things
 "
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Options:
 "   Set to anything to enable:
 "     php_sql_query           SQL syntax highlighting inside strings
 "     php_htmlInStrings       HTML syntax highlighting inside strings
+<<<<<<< HEAD
 " 
 "                             By setting this to 2, this will use a local copy of
 "                             HTML syntax highlighting instead of the official
@@ -39,6 +47,8 @@
 " 
 "                             By setting this to 3 (or any unrecognized value), 
 "                             this will use the official installed top level html syntax highlighting rules.
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 "     php_baselib             highlighting baselib functions
 "     php_asp_tags            highlighting ASP-style short tags
 "     php_parent_error_close  highlighting parent error ] or )
@@ -84,6 +94,7 @@ if !exists("main_syntax")
   let main_syntax = 'php'
 endif
 
+<<<<<<< HEAD
 " Start of copy of html for embedding in strings with  {{{
 " This is a clone of https://notabug.org/jorgesumle/vim-html-syntax
 " from 2021 Mar 02 with changed symbols and modifications to rules. See the Note in the file header.
@@ -292,6 +303,8 @@ if exists("php_htmlInStrings") && php_htmlInStrings==2
 endif
 
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 runtime! syntax/html.vim
 unlet b:current_syntax
 
@@ -309,8 +322,11 @@ if exists("php_parentError") && !exists("php_parent_error_open") && !exists("php
   let php_parent_error_open=1
 endif
 
+<<<<<<< HEAD
 " End of copy of html syntax for embedding in php strings }}}
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn cluster htmlPreproc add=phpRegion,phpRegionAsp,phpRegionSc
 
 syn include @sqlTop syntax/sql.vim
@@ -322,11 +338,15 @@ if exists( "php_sql_query")
 endif
 
 if exists( "php_htmlInStrings")
+<<<<<<< HEAD
   if php_htmlInStrings==2
     syn cluster phpAddStrings add=@phpInnerHtmlTop
   else
     syn cluster phpAddStrings add=@htmlTop
   endif
+=======
+  syn cluster phpAddStrings add=@htmlTop
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 endif
 
 " make sure we can use \ at the beginning of the line to do a continuation
@@ -519,7 +539,11 @@ syn keyword phpStatement return break continue exit goto yield contained
 syn keyword phpKeyword var const contained
 
 " Type
+<<<<<<< HEAD
 syn keyword phpType void bool boolean int integer real double float string array object NULL callable iterable mixed never contained
+=======
+syn keyword phpType void bool boolean int integer real double float string array object NULL callable iterable mixed contained
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Structure
 syn keyword phpStructure namespace extends implements instanceof parent self contained
@@ -597,7 +621,11 @@ syn match phpFloatError "\%([eE.][0-9._+-]*\.\|__\|_\(\>\|[eE]\)\|\(\>\|[eE]\)_\
 
 " Number
 syn match phpNumber "\%(\.\)\@<!\<\%([1-9]\d*\|0\|0[xX]\(\x_\?\)*\x\)\>\%(\.\)\@!" contained display
+<<<<<<< HEAD
 syn match phpNumber "\%(\.\)\@<!\<0\d\+\|0[oO]\d\+\>\%(\.\)\@!" contained contains=phpOctalError display
+=======
+syn match phpNumber "\%(\.\)\@<!\<0\d\+\>\%(\.\)\@!" contained contains=phpOctalError display
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn match phpBinaryError "[2-9]" contained display
 syn match phpNumber "\%(\.\)\@<!\<0[bB]\(\d_\?\)*\d\>\%(\.\)\@!" contained contains=phpBinaryError display
 
@@ -682,7 +710,11 @@ syn cluster phpClTop contains=@phpClFunction,phpFoldFunction,phpFoldClass,phpFol
 " Php Region
 if exists("php_parent_error_open")
   if exists("php_noShortTags")
+<<<<<<< HEAD
     syn region phpRegion matchgroup=Delimiter start="<?\(php\|=\)" end="?>" contains=@phpClTop
+=======
+    syn region phpRegion matchgroup=Delimiter start="<?php" end="?>" contains=@phpClTop
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
   else
     syn region phpRegion matchgroup=Delimiter start="<?\(php\)\=" end="?>" contains=@phpClTop
   endif
@@ -692,7 +724,11 @@ if exists("php_parent_error_open")
   endif
 else
   if exists("php_noShortTags")
+<<<<<<< HEAD
     syn region phpRegion matchgroup=Delimiter start="<?\(php\|=\)" end="?>" contains=@phpClTop keepend
+=======
+    syn region phpRegion matchgroup=Delimiter start="<?php" end="?>" contains=@phpClTop keepend
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
   else
     syn region phpRegion matchgroup=Delimiter start="<?\(php\)\=" end="?>" contains=@phpClTop keepend
   endif
@@ -705,13 +741,21 @@ endif
 " Fold
 if exists("php_folding") && php_folding==1
 " match one line constructs here and skip them at folding
+<<<<<<< HEAD
   syn keyword phpSCKeyword abstract final private protected public static readonly contained
+=======
+  syn keyword phpSCKeyword abstract final private protected public static contained
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
   syn keyword phpFCKeyword function contained
   syn keyword phpDefine fn contained
   syn keyword phpStorageClass global contained
   syn match phpDefine "\(\s\|^\)\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\(\s\+.*[;}]\)\@=" contained contains=phpSCKeyword
   syn match phpStructure "\(\s\|^\)\(abstract\s\+\|final\s\+\)*\(trait\|class\)\(\s\+.*}\)\@=" contained
+<<<<<<< HEAD
   syn match phpStructure "\(\s\|^\)\(interface\|enum\)\(\s\+.*}\)\@=" contained
+=======
+  syn match phpStructure "\(\s\|^\)interface\(\s\+.*}\)\@=" contained
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
   syn match phpException "\(\s\|^\)try\(\s\+.*}\)\@=" contained
   syn match phpException "\(\s\|^\)catch\(\s\+.*}\)\@=" contained
   syn match phpException "\(\s\|^\)finally\(\s\+.*}\)\@=" contained
@@ -720,15 +764,25 @@ if exists("php_folding") && php_folding==1
   syn region phpFoldHtmlInside matchgroup=Delimiter start="?>" end="<?\(php\)\=" contained transparent contains=@htmlTop
   syn region phpFoldFunction matchgroup=Storageclass start="^\z(\s*\)\(abstract\s\+\|final\s\+\|private\s\+\|protected\s\+\|public\s\+\|static\s\+\)*function\s\([^};]*$\)\@="rs=e-9 matchgroup=Delimiter end="^\z1}" contains=@phpClFunction,phpFoldHtmlInside,phpFCKeyword contained transparent fold extend
   syn region phpFoldFunction matchgroup=Define start="^function\s\([^};]*$\)\@=" matchgroup=Delimiter end="^}" contains=@phpClFunction,phpFoldHtmlInside contained transparent fold extend
+<<<<<<< HEAD
   syn region phpFoldClass matchgroup=Structure start="^\z(\s*\)\(abstract\s\+\|final\s\+\)*\(trait\|class\|enum\)\s\+\([^}]*$\)\@=" matchgroup=Delimiter end="^\z1}" contains=@phpClFunction,phpFoldFunction,phpSCKeyword contained transparent fold extend
+=======
+  syn region phpFoldClass matchgroup=Structure start="^\z(\s*\)\(abstract\s\+\|final\s\+\)*\(trait\|class\)\s\+\([^}]*$\)\@=" matchgroup=Delimiter end="^\z1}" contains=@phpClFunction,phpFoldFunction,phpSCKeyword contained transparent fold extend
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
   syn region phpFoldInterface matchgroup=Structure start="^\z(\s*\)interface\s\+\([^}]*$\)\@=" matchgroup=Delimiter end="^\z1}" contains=@phpClFunction,phpFoldFunction contained transparent fold extend
   syn region phpFoldCatch matchgroup=Exception start="^\z(\s*\)catch\s\+\([^}]*$\)\@=" matchgroup=Delimiter end="^\z1}" contains=@phpClFunction,phpFoldFunction contained transparent fold extend
   syn region phpFoldTry matchgroup=Exception start="^\z(\s*\)try\s\+\([^}]*$\)\@=" matchgroup=Delimiter end="^\z1}" contains=@phpClFunction,phpFoldFunction contained transparent fold extend
 else
   syn keyword phpDefine function fn contained
+<<<<<<< HEAD
   syn keyword phpStructure abstract class trait interface enum contained
   syn keyword phpException catch throw try finally contained
   syn keyword phpStorageClass final global private protected public static readonly contained
+=======
+  syn keyword phpStructure abstract class trait interface contained
+  syn keyword phpException catch throw try finally contained
+  syn keyword phpStorageClass final global private protected public static contained
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
   if exists("php_folding") && php_folding==2
     setlocal foldmethod=syntax
     syn region phpFoldHtmlInside matchgroup=Delimiter start="?>" end="<?\(php\)\=" contained transparent contains=@htmlTop
@@ -748,9 +802,15 @@ syntax keyword phpStructure list contained
 syntax keyword phpConditional switch contained
 syntax keyword phpStatement die contained
 
+<<<<<<< HEAD
 " Highlighting for PHP's user-definable magic class methods
 syntax keyword phpSpecialFunction containedin=ALLBUT,phpComment,phpStringDouble,phpStringSingle,phpIdentifier
   \ __construct __destruct __call __callStatic __get __set __isset __unset __sleep __wakeup __toString __invoke __set_state __clone __debugInfo __serialize __unserialize
+=======
+" Highlighting for PHP5's user-definable magic class methods
+syntax keyword phpSpecialFunction containedin=ALLBUT,phpComment,phpStringDouble,phpStringSingle,phpIdentifier
+  \ __construct __destruct __call __callStatic __get __set __isset __unset __sleep __wakeup __toString __invoke __set_state __clone __debugInfo
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Highlighting for __autoload slightly different from line above
 syntax keyword phpSpecialFunction containedin=ALLBUT,phpComment,phpStringDouble,phpStringSingle,phpIdentifier,phpMethodsVar
   \ __autoload
@@ -874,7 +934,11 @@ endif
 " Sync
 if php_sync_method==-1
   if exists("php_noShortTags")
+<<<<<<< HEAD
     syn sync match phpRegionSync grouphere phpRegion "^\s*<?\(php\|=\)\s*$"
+=======
+    syn sync match phpRegionSync grouphere phpRegion "^\s*<?php\s*$"
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
   else
     syn sync match phpRegionSync grouphere phpRegion "^\s*<?\(php\)\=\s*$"
   endif
@@ -894,7 +958,11 @@ endif
 
 syntax match phpDocCustomTags "@[a-zA-Z]*\(\s\+\|\n\|\r\)" containedin=phpComment
 syntax region phpDocTags start="{@\(example\|id\|internal\|inheritdoc\|link\|source\|toc\|tutorial\)" end="}" containedin=phpComment
+<<<<<<< HEAD
 syntax match phpDocTags "@\(abstract\|access\|api\|author\|category\|copyright\|deprecated\|example\|final\|global\|ignore\|internal\|license\|link\|method\|name\|package\|param\|property\(-write\|-read\)\?\|return\|see\|since\|source\|static\|staticvar\|subpackage\|tutorial\|uses\|used-by\|var\|version\|contributor\|modified\|filename\|description\|filesource\|throws\)\(\s\+\)\?" containedin=phpComment
+=======
+syntax match phpDocTags "@\(abstract\|access\|author\|category\|copyright\|deprecated\|example\|final\|global\|ignore\|internal\|license\|link\|method\|name\|package\|param\|property\|return\|see\|since\|static\|staticvar\|subpackage\|tutorial\|uses\|var\|version\|contributor\|modified\|filename\|description\|filesource\|throws\)\(\s\+\)\?" containedin=phpComment
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syntax match phpDocTodo "@\(todo\|fixme\|xxx\)\(\s\+\)\?" containedin=phpComment
 
 " Define the default highlighting.
@@ -965,6 +1033,10 @@ else
   hi def link phpIdentifierSimply Identifier
 endif
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 let b:current_syntax = "php"
 
 if main_syntax == 'php'

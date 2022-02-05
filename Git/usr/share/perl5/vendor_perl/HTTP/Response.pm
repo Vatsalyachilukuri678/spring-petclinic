@@ -3,7 +3,11 @@ package HTTP::Response;
 use strict;
 use warnings;
 
+<<<<<<< HEAD
 our $VERSION = '6.36';
+=======
+our $VERSION = '6.33';
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 use base 'HTTP::Message';
 
@@ -351,7 +355,11 @@ HTTP::Response - HTTP style response message
 
 =head1 VERSION
 
+<<<<<<< HEAD
 version 6.36
+=======
+version 6.33
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 =head1 SYNOPSIS
 

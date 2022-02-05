@@ -1,10 +1,18 @@
 " Vim indent file
+<<<<<<< HEAD
 " Language:		Autoconf configure.{ac,in} file
 " Maintainer:		Doug Kearns <dougkearns@gmail.com>
 " Previous Maintainer:	Nikolai Weibull <now@bitwi.se>
 " Last Change:		24 Sep 2021
 
 " TODO: how about nested [()]'s in one line what's wrong with '\\\@!'?
+=======
+" Language:             Autoconf configure.{ac,in} file
+" Previous Maintainer:  Nikolai Weibull <now@bitwi.se>
+" Latest Revision:      2006-12-20
+" TODO:                 how about nested [()]'s in one line
+"                   what's wrong with '\\\@!'?
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Only load this indent file when no other was loaded.
 if exists("b:did_indent")
@@ -17,8 +25,11 @@ setlocal indentexpr=GetConfigIndent()
 setlocal indentkeys=!^F,o,O,=then,=do,=else,=elif,=esac,=fi,=fin,=fil,=done
 setlocal nosmartindent
 
+<<<<<<< HEAD
 let b:undo_indent = "setl inde< indk< si<"
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Only define the function once.
 if exists("*GetConfigIndent")
   finish

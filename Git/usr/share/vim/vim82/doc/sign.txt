@@ -520,7 +520,10 @@ sign_jump({id}, {group}, {buf})
 		{buf} and position the cursor at sign {id} in group {group}.
 		This is similar to the |:sign-jump| command.
 
+<<<<<<< HEAD
 		If {group} is an empty string, then the global group is used.
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 		For the use of {buf}, see |bufname()|.
 
 		Returns the line number of the sign. Returns -1 if the

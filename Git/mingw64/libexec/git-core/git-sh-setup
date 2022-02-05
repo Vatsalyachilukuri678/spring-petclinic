@@ -172,6 +172,17 @@ git_pager() {
 	eval "$GIT_PAGER" '"$@"'
 }
 
+<<<<<<< HEAD
+=======
+sane_grep () {
+	GREP_OPTIONS= LC_ALL=C grep  "$@"
+}
+
+sane_egrep () {
+	GREP_OPTIONS= LC_ALL=C egrep  "$@"
+}
+
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 is_bare_repository () {
 	git rev-parse --is-bare-repository
 }

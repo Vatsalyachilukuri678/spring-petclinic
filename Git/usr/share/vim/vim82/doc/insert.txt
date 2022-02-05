@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *insert.txt*    For Vim version 8.2.  Last change: 2021 Oct 18
+=======
+*insert.txt*    For Vim version 8.2.  Last change: 2021 Aug 31
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 
 		  VIM REFERENCE MANUAL    by Bram Moolenaar
@@ -824,9 +828,12 @@ CTRL-X CTRL-K		Search the files given with the 'dictionary' option
 	CTRL-P		Search backwards for next matching keyword.  This
 			keyword replaces the previous matching keyword.
 
+<<<<<<< HEAD
 
 Completing words in 'thesaurus'				*compl-thesaurus*
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 							*i_CTRL-X_CTRL-T*
 CTRL-X CTRL-T		Works as CTRL-X CTRL-K, but in a special way.  It uses
 			the 'thesaurus' option instead of 'dictionary'.  If a
@@ -835,6 +842,19 @@ CTRL-X CTRL-T		Works as CTRL-X CTRL-K, but in a special way.  It uses
 			matches, even though they don't complete the word.
 			Thus a word can be completely replaced.
 
+<<<<<<< HEAD
+=======
+			For an example, imagine the 'thesaurus' file has a
+			line like this: >
+				angry furious mad enraged
+<			Placing the cursor after the letters "ang" and typing
+			CTRL-X CTRL-T would complete the word "angry";
+			subsequent presses would change the word to "furious",
+			"mad" etc.
+			Other uses include translation between two languages,
+			or grouping API functions by keyword.
+
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 	CTRL-T	or
 	CTRL-N		Search forward for next matching keyword.  This
 			keyword replaces the previous matching keyword.
@@ -842,6 +862,7 @@ CTRL-X CTRL-T		Works as CTRL-X CTRL-K, but in a special way.  It uses
 	CTRL-P		Search backwards for next matching keyword.  This
 			keyword replaces the previous matching keyword.
 
+<<<<<<< HEAD
 In the file used by the 'thesaurus' option each line in the file should
 contain words with similar meaning, separated by non-keyword characters (white
 space is preferred).  Maximum line length is 510 bytes.
@@ -897,6 +918,8 @@ Groß): >
 	    set thesaurusfunc=Thesaur
 	endif
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Completing keywords in the current and included files	*compl-keyword*
 
@@ -1100,7 +1123,11 @@ CTRL-X CTRL-Z		Stop completion without changing the text.
 
 FUNCTIONS FOR FINDING COMPLETIONS			*complete-functions*
 
+<<<<<<< HEAD
 This applies to 'completefunc', 'thesaurusfunc' and 'omnifunc'.
+=======
+This applies to 'completefunc' and 'omnifunc'.
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 The function is called in two different ways:
 - First the function is called to find the start of the text to be completed.

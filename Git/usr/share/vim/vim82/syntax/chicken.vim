@@ -1,6 +1,10 @@
 " Vim syntax file
 " Language: Scheme (CHICKEN)
+<<<<<<< HEAD
 " Last Change: 2021 Oct 01
+=======
+" Last Change: 2021 Jul 30
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Author: Evan Hanson <evhan@foldling.org>
 " Maintainer: Evan Hanson <evhan@foldling.org>
 " Repository: https://git.foldling.org/vim-scheme.git
@@ -37,7 +41,11 @@ if len(s:c)
   syn region c matchgroup=schemeComment start=/#>/ end=/<#/ contains=@c
 endif
 
+<<<<<<< HEAD
 " SRFI 26
+=======
+# SRFI 26
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn match schemeSyntax /\(([ \t\n]*\)\@<=\(cut\|cute\)\>/
 
 syn keyword schemeSyntax and-let*

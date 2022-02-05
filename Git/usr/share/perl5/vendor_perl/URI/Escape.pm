@@ -141,7 +141,11 @@ use Exporter 5.57 'import';
 our %escapes;
 our @EXPORT = qw(uri_escape uri_unescape uri_escape_utf8);
 our @EXPORT_OK = qw(%escapes);
+<<<<<<< HEAD
 our $VERSION = '5.10';
+=======
+our $VERSION = '5.09';
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 use Carp ();
 

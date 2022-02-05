@@ -453,7 +453,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <em>git stash</em> drop [-q|--quiet] [&lt;stash&gt;]
 <em>git stash</em> ( pop | apply ) [--index] [-q|--quiet] [&lt;stash&gt;]
 <em>git stash</em> branch &lt;branchname&gt; [&lt;stash&gt;]
+<<<<<<< HEAD
 <em>git stash</em> [push [-p|--patch] [-S|--staged] [-k|--[no-]keep-index] [-q|--quiet]
+=======
+<em>git stash</em> [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
              [-u|--include-untracked] [-a|--all] [-m|--message &lt;message&gt;]
              [--pathspec-from-file=&lt;file&gt; [--pathspec-file-nul]]
              [--] [&lt;pathspec&gt;&#8230;&#8203;]]
@@ -496,7 +500,11 @@ stash index (e.g. the integer <code>n</code> is equivalent to <code>stash@{n}</c
 <div class="sectionbody">
 <div class="dlist">
 <dl>
+<<<<<<< HEAD
 <dt class="hdlist1">push [-p|--patch] [-S|--staged] [-k|--[no-]keep-index] [-u|--include-untracked] [-a|--all] [-q|--quiet] [-m|--message &lt;message&gt;] [--pathspec-from-file=&lt;file&gt; [--pathspec-file-nul]] [--] [&lt;pathspec&gt;&#8230;&#8203;]</dt>
+=======
+<dt class="hdlist1">push [-p|--patch] [-k|--[no-]keep-index] [-u|--include-untracked] [-a|--all] [-q|--quiet] [-m|--message &lt;message&gt;] [--pathspec-from-file=&lt;file&gt; [--pathspec-file-nul]] [--] [&lt;pathspec&gt;&#8230;&#8203;]</dt>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <dd>
 <p>Save your local modifications to a new <em>stash entry</em> and roll them
 back to HEAD (in the working tree and in the index).
@@ -510,7 +518,11 @@ are <code>stash -p</code> which acts as alias for <code>stash push -p</code> and
 which are allowed after a double hyphen <code>--</code> for disambiguation.</p>
 </div>
 </dd>
+<<<<<<< HEAD
 <dt class="hdlist1">save [-p|--patch] [-S|--staged] [-k|--[no-]keep-index] [-u|--include-untracked] [-a|--all] [-q|--quiet] [&lt;message&gt;]</dt>
+=======
+<dt class="hdlist1">save [-p|--patch] [-k|--[no-]keep-index] [-u|--include-untracked] [-a|--all] [-q|--quiet] [&lt;message&gt;]</dt>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <dd>
 <p>This option is deprecated in favour of <em>git stash push</em>.  It
 differs from "stash push" in that it cannot take pathspec.
@@ -680,6 +692,7 @@ to learn how to operate the <code>--patch</code> mode.</p>
 <code>--no-keep-index</code> to override this.</p>
 </div>
 </dd>
+<<<<<<< HEAD
 <dt class="hdlist1">-S</dt>
 <dt class="hdlist1">--staged</dt>
 <dd>
@@ -693,6 +706,8 @@ of current branch.</p>
 <p>The <code>--patch</code> option has priority over this one.</p>
 </div>
 </dd>
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <dt class="hdlist1">--pathspec-from-file=&lt;file&gt;</dt>
 <dd>
 <p>This option is only valid for <code>push</code> command.</p>
@@ -860,6 +875,7 @@ $ git commit foo -m 'Remaining parts'</pre>
 </div>
 </div>
 </dd>
+<<<<<<< HEAD
 <dt class="hdlist1">Saving unrelated changes for future use</dt>
 <dd>
 <p>When you are in the middle of massive changes and you find some
@@ -879,6 +895,8 @@ $ git stash pop                 # to finish work on the saved changes</pre>
 </div>
 </div>
 </dd>
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 <dt class="hdlist1">Recovering stash entries that were cleared/dropped erroneously</dt>
 <dd>
 <p>If you mistakenly drop or clear stash entries, they cannot be recovered
@@ -920,7 +938,11 @@ xargs git log --merges --no-walk --grep=WIP</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
+<<<<<<< HEAD
 Last updated 2022-02-01 15:47:52 UTC
+=======
+Last updated 2021-11-25 10:48:06 UTC
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </div>
 </div>
 </body>

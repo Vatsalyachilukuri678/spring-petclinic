@@ -2,9 +2,17 @@
 " Language:    Pascal
 " Maintainer:  Neil Carter <n.carter@swansea.ac.uk>
 " Created:     2004 Jul 13
+<<<<<<< HEAD
 " Last Change: 2021 Sep 22
 "
 " For further documentation, see https://psy.swansea.ac.uk/staff/carter/vim/
+=======
+" Last Change: 2021 Jul 01
+"
+" This is version 2.0, a complete rewrite.
+"
+" For further documentation, see http://psy.swansea.ac.uk/staff/carter/vim/
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 
 if exists("b:did_indent")
@@ -18,14 +26,21 @@ setlocal indentkeys+==end;,==const,==type,==var,==begin,==repeat,==until,==for
 setlocal indentkeys+==program,==function,==procedure,==object,==private
 setlocal indentkeys+==record,==if,==else,==case
 
+<<<<<<< HEAD
 let b:undo_indent = 'setlocal indentexpr< indentkeys<'
+=======
+let b:undo_indent = "setl indentkeys< indentexpr<"
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 if exists("*GetPascalIndent")
 	finish
 endif
 
 
+<<<<<<< HEAD
 " ________________________________________________________________
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 function! s:GetPrevNonCommentLineNum( line_num )
 
 	" Skip lines starting with a comment
@@ -43,7 +58,10 @@ function! s:GetPrevNonCommentLineNum( line_num )
 endfunction
 
 
+<<<<<<< HEAD
 " ________________________________________________________________
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 function! s:PurifyCode( line_num )
 	" Strip any trailing comments and whitespace
 	let pureline = 'TODO'
@@ -51,7 +69,10 @@ function! s:PurifyCode( line_num )
 endfunction
 
 
+<<<<<<< HEAD
 " ________________________________________________________________
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 function! GetPascalIndent( line_num )
 
 	" Line 0 always goes at column 0
@@ -185,7 +206,11 @@ function! GetPascalIndent( line_num )
 	endif
 
 
+<<<<<<< HEAD
 " ________________________________________________________________
+=======
+" ____________________________________________________________________
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Object/Borland Pascal/Delphi Extensions
 "
 " Note that extended-pascal is handled here, unless it is simpler to
@@ -223,6 +248,11 @@ function! GetPascalIndent( line_num )
 	endif
 
 
+<<<<<<< HEAD
+=======
+" ____________________________________________________________________
+
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 	" If nothing changed, return same indent.
 	return indnt
 endfunction

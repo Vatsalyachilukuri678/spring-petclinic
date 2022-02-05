@@ -1,22 +1,35 @@
 " Vim syntax file
 " Language:	X Pixmap
 " Maintainer:	Ronald Schild <rs@scutum.de>
+<<<<<<< HEAD
 " Last Change:	2021 Oct 04
 " Version:	5.4n.1
 "               Jemma Nelson added termguicolors support
 "               Dominique Pellé fixed spelling support
+=======
+" Last Change:	2017 Feb 01
+" Version:	5.4n.1
+"               Jemma Nelson added termguicolors support
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " quit when a syntax file was already loaded
 if exists("b:current_syntax")
   finish
 endif
 
+<<<<<<< HEAD
 syn spell notoplevel
 
 syn keyword xpmType		char
 syn keyword xpmStorageClass	static
 syn keyword xpmTodo		TODO FIXME XXX  contained
 syn region  xpmComment		start="/\*"  end="\*/"  contains=xpmTodo,@Spell
+=======
+syn keyword xpmType		char
+syn keyword xpmStorageClass	static
+syn keyword xpmTodo		TODO FIXME XXX  contained
+syn region  xpmComment		start="/\*"  end="\*/"  contains=xpmTodo
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn region  xpmPixelString	start=+"+  skip=+\\\\\|\\"+  end=+"+  contains=@xpmColors
 
 if has("gui_running") || has("termguicolors") && &termguicolors

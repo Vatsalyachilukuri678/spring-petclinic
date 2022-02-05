@@ -632,11 +632,19 @@ command can be requested at a time.</p>
 empty-request = flush-pkt
 command-request = command
     capability-list
+<<<<<<< HEAD
     delim-pkt
     command-args
     flush-pkt
 command = PKT-LINE("command=" key LF)
 command-args = *command-specific-arg</pre>
+=======
+    [command-args]
+    flush-pkt
+command = PKT-LINE("command=" key LF)
+command-args = delim-pkt
+ *command-specific-arg</pre>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </div>
 </div>
 <div class="literalblock">
@@ -1254,7 +1262,11 @@ and associated requested information, each separated by a single space.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
+<<<<<<< HEAD
 Last updated 2022-02-01 15:47:52 UTC
+=======
+Last updated 2021-11-25 10:48:06 UTC
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </div>
 </div>
 </body>

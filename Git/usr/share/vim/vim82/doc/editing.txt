@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *editing.txt*   For Vim version 8.2.  Last change: 2021 Oct 16
+=======
+*editing.txt*   For Vim version 8.2.  Last change: 2021 Jul 25
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 
 		  VIM REFERENCE MANUAL    by Bram Moolenaar
@@ -1225,9 +1229,13 @@ If you want to always use ":confirm", set the 'confirm' option.
 			|:diffsplit|, |:diffpatch|, |:open|, |:pedit|,
 			|:redir|, |:source|, |:update|, |:visual|, |:vsplit|,
 			and |:qall| if 'confirm' is set.
+<<<<<<< HEAD
 			{only in Win32, Athena, Motif, GTK and Mac GUI, in
 			console `browse edit` works if the FileExplorer
 			autocommand group exists}
+=======
+			{only in Win32, Athena, Motif, GTK and Mac GUI}
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 			When ":browse" is not possible you get an error
 			message.  If the |+browse| feature is missing or the
 			{command} doesn't support browsing, the {command} is
@@ -1329,26 +1337,44 @@ present in 'cpoptions' and "!" is not used in the command.
 			other tabs and for windows in the current tab that
 			have their own window-local directory.
 
+<<<<<<< HEAD
+=======
+							*:tch* *:tchdir*
+:tch[dir][!]		Same as |:tcd|.
+
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 							*:tcd-*
 :tc[d][!] -		Change to the previous current directory, before the
 			last ":tcd {path}" command.
 
+<<<<<<< HEAD
 							*:tch* *:tchdir*
 :tch[dir][!]		Same as |:tcd|.
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 							*:lc* *:lcd*
 :lc[d][!] {path}	Like |:cd|, but only set the current directory when
 			the cursor is in the current window.  The current
 			directory for other windows is not changed, switching
 			to another window will stop using {path}.
 
+<<<<<<< HEAD
+=======
+							*:lch* *:lchdir*
+:lch[dir][!]		Same as |:lcd|.
+
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 							*:lcd-*
 :lcd[!] -		Change to the previous current directory, before the
 			last ":lcd {path}" command.
 
+<<<<<<< HEAD
 							*:lch* *:lchdir*
 :lch[dir][!]		Same as |:lcd|.
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 							*:pw* *:pwd* *E187*
 :pw[d]			Print the current directory name.
 			Also see |getcwd()|.
@@ -1375,14 +1401,22 @@ change anything for the current directory.
 When a |:lcd| command has been used for a window, the specified directory
 becomes the current directory for that window.  Windows where the |:lcd|
 command has not been used stick to the global or tab-local current directory.
+<<<<<<< HEAD
 When jumping to another window the current directory is changed to the last
+=======
+When jumping to another window the current directory will become the last
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 specified local current directory.  If none was specified, the global or
 tab-local current directory is used.
 
 When a |:tcd| command has been used for a tab page, the specified directory
 becomes the current directory for the current tab page and the current window.
 The current directory of other tab pages is not affected.  When jumping to
+<<<<<<< HEAD
 another tab page, the current directory is changed to the last specified local
+=======
+another tab page, the current directory will become the last specified local
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 directory for that tab page. If the current tab has no local current directory
 the global current directory is used.
 
@@ -1676,11 +1710,14 @@ It is also possible that you modified the file yourself, from another edit
 session or with another command (e.g., a filter command).  Then you will know
 which version of the file you want to keep.
 
+<<<<<<< HEAD
 The accuracy of the time check depends on the filesystem.  On Unix it is
 usually sub-second.  With old file sytems and on MS-Windows it is normally one
 second.  Use has('nanotime') check if sub-second time stamp checks are
 available.
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 There is one situation where you get the message while there is nothing wrong:
 On a Win32 system on the day daylight saving time starts.  There is something
 in the Win32 libraries that confuses Vim about the hour time difference.  The

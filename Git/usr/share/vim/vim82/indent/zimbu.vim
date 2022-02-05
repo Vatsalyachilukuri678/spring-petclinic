@@ -1,7 +1,11 @@
 " Vim indent file
 " Language:	Zimbu
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
+<<<<<<< HEAD
 " Last Change:	2021 Sep 26
+=======
+" Last Change:	2016 Jan 25
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Only load this indent file when no other was loaded.
 if exists("b:did_indent")
@@ -16,7 +20,11 @@ setlocal indentkeys=0{,0},!^F,o,O,0=ELSE,0=ELSEIF,0=CASE,0=DEFAULT,0=FINALLY
 " We impose recommended defaults: no Tabs, 'shiftwidth' = 2
 setlocal sw=2 et
 
+<<<<<<< HEAD
 let b:undo_indent = "setl ai< cin< et< indentkeys< indentexpr< lisp< sw<"
+=======
+let b:undo_indent = "setl et< sw< ai< indentkeys< indentexpr="
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Only define the function once.
 if exists("*GetZimbuIndent")

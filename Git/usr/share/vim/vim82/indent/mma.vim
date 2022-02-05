@@ -1,10 +1,18 @@
 " Vim indent file
+<<<<<<< HEAD
 " Language:	Mathematica
 " Maintainer:	Steve Layland <layland@wolfram.com> (Invalid email address)
 " 		Doug Kearns <dougkearns@gmail.com>
 " Last Change:	Sat May  10 18:56:22 CDT 2005
 " Source:	http://vim.sourceforge.net/scripts/script.php?script_id=1274
 " 		http://members.wolfram.com/layland/vim/indent/mma.vim
+=======
+" Language:     Mathematica
+" Author:       steve layland <layland@wolfram.com>
+" Last Change:  Sat May  10 18:56:22 CDT 2005
+" Source:       http://vim.sourceforge.net/scripts/script.php?script_id=1274
+"               http://members.wolfram.com/layland/vim/indent/mma.vim
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 "
 " NOTE:
 " Empty .m files will automatically be presumed to be Matlab files

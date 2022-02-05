@@ -528,6 +528,7 @@ running, enable trace output by setting the environment variable <code>GIT_TRACE
 </div>
 <div class="paragraph">
 <p>Add usage text and <code>-h</code> handling, like all subcommands should consistently do
+<<<<<<< HEAD
 (our test suite will notice and complain if you fail to do so).
 We&#8217;ll need to include the <code>parse-options.h</code> header.</p>
 </div>
@@ -538,11 +539,22 @@ We&#8217;ll need to include the <code>parse-options.h</code> header.</p>
 ...
 
 int cmd_walken(int argc, const char **argv, const char *prefix)
+=======
+(our test suite will notice and complain if you fail to do so).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>int cmd_walken(int argc, const char **argv, const char *prefix)
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 {
         const char * const walken_usage[] = {
                 N_("git walken"),
                 NULL,
+<<<<<<< HEAD
         };
+=======
+        }
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
         struct option options[] = {
                 OPT_END()
         };
@@ -739,6 +751,7 @@ ourselves; however, we should call <code>git_default_config()</code> if we aren&
 any other existing config callbacks.</p>
 </div>
 <div class="paragraph">
+<<<<<<< HEAD
 <p>Add a new function to <code>builtin/walken.c</code>.
 We&#8217;ll also need to include the <code>config.h</code> header:</p>
 </div>
@@ -749,6 +762,13 @@ We&#8217;ll also need to include the <code>config.h</code> header:</p>
 ...
 
 static int git_walken_config(const char *var, const char *value, void *cb)
+=======
+<p>Add a new function to <code>builtin/walken.c</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>static int git_walken_config(const char *var, const char *value, void *cb)
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 {
         /*
          * For now, we don't have any custom configuration, so fall back to
@@ -784,6 +804,7 @@ to target, as well as the <code>prefix</code> argument of <code>cmd_walken</code
 struct.</p>
 </div>
 <div class="paragraph">
+<<<<<<< HEAD
 <p>Add the <code>struct rev_info</code> and the <code>repo_init_revisions()</code> call.
 We&#8217;ll also need to include the <code>revision.h</code> header:</p>
 </div>
@@ -794,6 +815,13 @@ We&#8217;ll also need to include the <code>revision.h</code> header:</p>
 ...
 
 int cmd_walken(int argc, const char **argv, const char *prefix)
+=======
+<p>Add the <code>struct rev_info</code> and the <code>repo_init_revisions()</code> call:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>int cmd_walken(int argc, const char **argv, const char *prefix)
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 {
         /* This can go wherever you like in your declarations.*/
         struct rev_info rev;
@@ -1315,6 +1343,7 @@ ready to call <code>prepare_revision_walk()</code>.</p>
 </div>
 <div class="paragraph">
 <p>Let&#8217;s start by calling just the unfiltered walk and reporting our counts.
+<<<<<<< HEAD
 Complete your implementation of <code>walken_object_walk()</code>.
 We&#8217;ll also need to include the <code>list-objects.h</code> header.</p>
 </div>
@@ -1325,6 +1354,13 @@ We&#8217;ll also need to include the <code>list-objects.h</code> header.</p>
 ...
 
         traverse_commit_list(rev, walken_show_commit, walken_show_object, NULL);
+=======
+Complete your implementation of <code>walken_object_walk()</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>        traverse_commit_list(rev, walken_show_commit, walken_show_object, NULL);
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
         printf("commits %d\nblobs %d\ntags %d\ntrees %d\n", commit_count,
                 blob_count, tag_count, tree_count);
@@ -1432,7 +1468,11 @@ referenced by <code>HEAD</code> or <code>HEAD</code>'s history, because we begin
 <div class="content">
 <pre>static void walken_object_walk(struct rev_info *rev)
 {
+<<<<<<< HEAD
         struct list_objects_filter_options filter_options = { 0 };
+=======
+        struct list_objects_filter_options filter_options = {};
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
         ...</pre>
 </div>
@@ -1664,7 +1704,11 @@ initial commit, <code>e83c5163</code>.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
+<<<<<<< HEAD
 Last updated 2022-02-01 15:47:52 UTC
+=======
+Last updated 2021-11-25 10:48:06 UTC
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </div>
 </div>
 </body>

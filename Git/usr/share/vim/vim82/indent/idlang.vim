@@ -1,8 +1,14 @@
 " IDL (Interactive Data Language) indent file.
+<<<<<<< HEAD
 " Language:	IDL (ft=idlang)
 " Maintainer:	Aleksandar Jelenak <ajelenak AT yahoo.com> (Invalid email address)
 " 		Doug Kearns <dougkearns@gmail.com>
 " Last change:	2017 Jun 13
+=======
+" Language: IDL (ft=idlang)
+" Last change:	2017 Jun 13
+" Maintainer: Aleksandar Jelenak <ajelenak AT yahoo.com>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Only load this indent file when no other was loaded.
 if exists("b:did_indent")

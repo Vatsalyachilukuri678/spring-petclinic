@@ -1,8 +1,14 @@
 " Vim indent file
+<<<<<<< HEAD
 " Language:		ld(1) script
 " Maintainer:		Doug Kearns <dougkearns@gmail.com>
 " Previous Maintainer:	Nikolai Weibull <now@bitwi.se>
 " Last Change:		24 Sep 2021
+=======
+" Language:             ld(1) script
+" Previous Maintainer:  Nikolai Weibull <now@bitwi.se>
+" Latest Revision:      2006-12-20
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 if exists("b:did_indent")
   finish
@@ -13,8 +19,11 @@ setlocal indentexpr=GetLDIndent()
 setlocal indentkeys=0{,0},!^F,o,O
 setlocal nosmartindent
 
+<<<<<<< HEAD
 let b:undo_indent = "setl inde< indk< si<"
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 if exists("*GetLDIndent")
   finish
 endif

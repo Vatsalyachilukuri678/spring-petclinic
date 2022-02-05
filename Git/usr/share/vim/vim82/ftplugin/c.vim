@@ -1,7 +1,11 @@
 " Vim filetype plugin file
 " Language:	C
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
+<<<<<<< HEAD
 " Last Change:	2021 Sep 21
+=======
+" Last Change:	2020 Feb 01
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Only do this when not done yet for this buffer
 if exists("b:did_ftplugin")
@@ -40,11 +44,16 @@ endif
 
 " When the matchit plugin is loaded, this makes the % command skip parens and
 " braces in comments properly.
+<<<<<<< HEAD
 if !exists("b:match_words")
   let b:match_words = '^\s*#\s*if\(\|def\|ndef\)\>:^\s*#\s*elif\>:^\s*#\s*else\>:^\s*#\s*endif\>'
   let b:match_skip = 's:comment\|string\|character\|special'
   let b:undo_ftplugin ..= " | unlet! b:match_skip b:match_words"
 endif
+=======
+let b:match_words = '^\s*#\s*if\(\|def\|ndef\)\>:^\s*#\s*elif\>:^\s*#\s*else\>:^\s*#\s*endif\>'
+let b:match_skip = 's:comment\|string\|character\|special'
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Win32 can filter files in the browse dialog
 if (has("gui_win32") || has("gui_gtk")) && !exists("b:browsefilter")
@@ -65,7 +74,10 @@ if (has("gui_win32") || has("gui_gtk")) && !exists("b:browsefilter")
 	  \ "C++ Source Files (*.cpp *.c++)\t*.cpp;*.c++\n" .
 	  \ "All Files (*.*)\t*.*\n"
   endif
+<<<<<<< HEAD
   let b:undo_ftplugin ..= " | unlet! b:browsefilter"
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 endif
 
 let &cpo = s:cpo_save

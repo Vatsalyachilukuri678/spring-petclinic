@@ -1595,6 +1595,7 @@ themselves, you&#8217;ll need to prepare the patches. Luckily, this is pretty si
 </div>
 <div class="listingblock">
 <div class="content">
+<<<<<<< HEAD
 <pre>$ git format-patch --cover-letter -o psuh/ --base=auto psuh@{u}..psuh</pre>
 </div>
 </div>
@@ -1632,6 +1633,24 @@ its upstream", which is the same thing.</p>
 </div>
 <div class="paragraph">
 <p>The command will make one patch file per commit. After you
+=======
+<pre>$ git format-patch --cover-letter -o psuh/ master..psuh</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <code>--cover-letter</code> parameter tells <code>format-patch</code> to create a cover letter
+template for you. You will need to fill in the template before you&#8217;re ready
+to send - but for now, the template will be next to your other patches.</p>
+</div>
+<div class="paragraph">
+<p>The <code>-o psuh/</code> parameter tells <code>format-patch</code> to place the patch files into a
+directory. This is useful because <code>git send-email</code> can take a directory and
+send out all the patches from there.</p>
+</div>
+<div class="paragraph">
+<p><code>master..psuh</code> tells <code>format-patch</code> to generate patches for the difference
+between <code>master</code> and <code>psuh</code>. It will make one patch file per commit. After you
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 run, you can go have a look at each of the patches with your favorite text
 editor and make sure everything looks alright; however, it&#8217;s not recommended to
 make code fixups via the patch file. It&#8217;s a better idea to make the change the
@@ -2051,7 +2070,11 @@ should generate your diffs from <code>&lt;topic&gt;..&lt;mybranch&gt;</code> and
 </div>
 <div id="footer">
 <div id="footer-text">
+<<<<<<< HEAD
 Last updated 2022-02-01 15:47:52 UTC
+=======
+Last updated 2021-11-25 10:48:06 UTC
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 </div>
 </div>
 </body>

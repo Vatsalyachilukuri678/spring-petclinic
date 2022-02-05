@@ -47,7 +47,11 @@ sub create_curl {
     $curl->setopt(CURLOPT_VERBOSE, 1) if $options{d};
     $curl->setopt(CURLOPT_FAILONERROR, 1);
     $curl->setopt(CURLOPT_USERAGENT,
+<<<<<<< HEAD
         "OpenTSA tsget.pl/openssl-1.1.1m");
+=======
+        "OpenTSA tsget.pl/openssl-1.1.1l");
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
     # Options for POST method.
     $curl->setopt(CURLOPT_UPLOAD, 1);

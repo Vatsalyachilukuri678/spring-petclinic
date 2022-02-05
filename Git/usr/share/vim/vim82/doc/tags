@@ -302,7 +302,10 @@ $VIM_POSIX	vi_diff.txt	/*$VIM_POSIX*
 'gfs'	options.txt	/*'gfs'*
 'gfw'	options.txt	/*'gfw'*
 'ghr'	options.txt	/*'ghr'*
+<<<<<<< HEAD
 'gli'	options.txt	/*'gli'*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 'go'	options.txt	/*'go'*
 'go-!'	options.txt	/*'go-!'*
 'go-A'	options.txt	/*'go-A'*
@@ -340,7 +343,10 @@ $VIM_POSIX	vi_diff.txt	/*$VIM_POSIX*
 'guifontset'	options.txt	/*'guifontset'*
 'guifontwide'	options.txt	/*'guifontwide'*
 'guiheadroom'	options.txt	/*'guiheadroom'*
+<<<<<<< HEAD
 'guiligatures'	options.txt	/*'guiligatures'*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 'guioptions'	options.txt	/*'guioptions'*
 'guipty'	options.txt	/*'guipty'*
 'guitablabel'	options.txt	/*'guitablabel'*
@@ -1140,7 +1146,10 @@ $VIM_POSIX	vi_diff.txt	/*$VIM_POSIX*
 'tgc'	options.txt	/*'tgc'*
 'tgst'	options.txt	/*'tgst'*
 'thesaurus'	options.txt	/*'thesaurus'*
+<<<<<<< HEAD
 'thesaurusfunc'	options.txt	/*'thesaurusfunc'*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 'tildeop'	options.txt	/*'tildeop'*
 'timeout'	options.txt	/*'timeout'*
 'timeoutlen'	options.txt	/*'timeoutlen'*
@@ -2080,7 +2089,10 @@ $VIM_POSIX	vi_diff.txt	/*$VIM_POSIX*
 :XMLent	insert.txt	/*:XMLent*
 :XMLns	insert.txt	/*:XMLns*
 :[range]	motion.txt	/*:[range]*
+<<<<<<< HEAD
 :[vV\x16]	autocmd.txt	/*:[vV\\x16]*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 :\bar	cmdline.txt	/*:\\bar*
 :_!	cmdline.txt	/*:_!*
 :_#	cmdline.txt	/*:_#*
@@ -3996,8 +4008,11 @@ E1233	eval.txt	/*E1233*
 E1237	map.txt	/*E1237*
 E1239	eval.txt	/*E1239*
 E124	eval.txt	/*E124*
+<<<<<<< HEAD
 E1243	options.txt	/*E1243*
 E1244	message.txt	/*E1244*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 E125	eval.txt	/*E125*
 E126	eval.txt	/*E126*
 E127	eval.txt	/*E127*
@@ -4949,7 +4964,10 @@ FileChangedRO	autocmd.txt	/*FileChangedRO*
 FileChangedShell	autocmd.txt	/*FileChangedShell*
 FileChangedShellPost	autocmd.txt	/*FileChangedShellPost*
 FileEncoding	autocmd.txt	/*FileEncoding*
+<<<<<<< HEAD
 FileExplorer	autocmd.txt	/*FileExplorer*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 FileReadCmd	autocmd.txt	/*FileReadCmd*
 FileReadPost	autocmd.txt	/*FileReadPost*
 FileReadPre	autocmd.txt	/*FileReadPre*
@@ -5036,7 +5054,10 @@ N:	cmdline.txt	/*N:*
 N<Del>	various.txt	/*N<Del>*
 NFA	pattern.txt	/*NFA*
 NL-used-for-Nul	pattern.txt	/*NL-used-for-Nul*
+<<<<<<< HEAD
 NOT	eval.txt	/*NOT*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 Neovim	intro.txt	/*Neovim*
 NetBSD-backspace	options.txt	/*NetBSD-backspace*
 NetBeans	netbeans.txt	/*NetBeans*
@@ -5937,8 +5958,11 @@ compl-omni-filetypes	insert.txt	/*compl-omni-filetypes*
 compl-spelling	insert.txt	/*compl-spelling*
 compl-stop	insert.txt	/*compl-stop*
 compl-tag	insert.txt	/*compl-tag*
+<<<<<<< HEAD
 compl-thesaurus	insert.txt	/*compl-thesaurus*
 compl-thesaurusfunc	insert.txt	/*compl-thesaurusfunc*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 compl-vim	insert.txt	/*compl-vim*
 compl-whole-line	insert.txt	/*compl-whole-line*
 complete()	eval.txt	/*complete()*
@@ -6560,6 +6584,10 @@ format-bullet-list	tips.txt	/*format-bullet-list*
 format-comments	change.txt	/*format-comments*
 format-formatexpr	change.txt	/*format-formatexpr*
 formatting	change.txt	/*formatting*
+<<<<<<< HEAD
+=======
+formfeed	intro.txt	/*formfeed*
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 fortran.vim	syntax.txt	/*fortran.vim*
 friendship	intro.txt	/*friendship*
 frombook	usr_01.txt	/*frombook*
@@ -6618,7 +6646,10 @@ ft-fortran-plugin	filetype.txt	/*ft-fortran-plugin*
 ft-fortran-syntax	syntax.txt	/*ft-fortran-syntax*
 ft-fvwm-syntax	syntax.txt	/*ft-fvwm-syntax*
 ft-gitcommit-plugin	filetype.txt	/*ft-gitcommit-plugin*
+<<<<<<< HEAD
 ft-gprof-plugin	filetype.txt	/*ft-gprof-plugin*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 ft-groff-syntax	syntax.txt	/*ft-groff-syntax*
 ft-gsp-syntax	syntax.txt	/*ft-gsp-syntax*
 ft-haskell-syntax	syntax.txt	/*ft-haskell-syntax*
@@ -7215,7 +7246,10 @@ gui-x11-printing	gui_x11.txt	/*gui-x11-printing*
 gui-x11-start	gui_x11.txt	/*gui-x11-start*
 gui-x11-various	gui_x11.txt	/*gui-x11-various*
 gui.txt	gui.txt	/*gui.txt*
+<<<<<<< HEAD
 gui_running	eval.txt	/*gui_running*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 gui_w32.txt	gui_w32.txt	/*gui_w32.txt*
 gui_x11.txt	gui_x11.txt	/*gui_x11.txt*
 guifontwide_gtk	gui.txt	/*guifontwide_gtk*
@@ -7284,7 +7318,10 @@ hidden-options	options.txt	/*hidden-options*
 hidden-quit	windows.txt	/*hidden-quit*
 highlight-args	syntax.txt	/*highlight-args*
 highlight-changed	version4.txt	/*highlight-changed*
+<<<<<<< HEAD
 highlight-clear	syntax.txt	/*highlight-clear*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 highlight-cterm	syntax.txt	/*highlight-cterm*
 highlight-ctermbg	syntax.txt	/*highlight-ctermbg*
 highlight-ctermfg	syntax.txt	/*highlight-ctermfg*
@@ -7378,9 +7415,13 @@ hl-debugBreakpoint	terminal.txt	/*hl-debugBreakpoint*
 hl-debugPC	terminal.txt	/*hl-debugPC*
 hlID()	eval.txt	/*hlID()*
 hlexists()	eval.txt	/*hlexists()*
+<<<<<<< HEAD
 hlget()	eval.txt	/*hlget()*
 hlsearch-variable	eval.txt	/*hlsearch-variable*
 hlset()	eval.txt	/*hlset()*
+=======
+hlsearch-variable	eval.txt	/*hlsearch-variable*
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 holy-grail	index.txt	/*holy-grail*
 home	intro.txt	/*home*
 home-replace	editing.txt	/*home-replace*
@@ -8940,7 +8981,10 @@ save-file	editing.txt	/*save-file*
 save-settings	starting.txt	/*save-settings*
 scheme.vim	syntax.txt	/*scheme.vim*
 scp	pi_netrw.txt	/*scp*
+<<<<<<< HEAD
 scratch-buffer	windows.txt	/*scratch-buffer*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 screenattr()	eval.txt	/*screenattr()*
 screenchar()	eval.txt	/*screenchar()*
 screenchars()	eval.txt	/*screenchars()*
@@ -9839,7 +9883,10 @@ try-echoerr	eval.txt	/*try-echoerr*
 try-finally	eval.txt	/*try-finally*
 try-nested	eval.txt	/*try-nested*
 try-nesting	eval.txt	/*try-nesting*
+<<<<<<< HEAD
 tsrfu'	options.txt	/*tsrfu'*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 tutor	usr_01.txt	/*tutor*
 twice	if_cscop.txt	/*twice*
 two-engines	pattern.txt	/*two-engines*
@@ -9944,7 +9991,10 @@ v:charconvert_to	eval.txt	/*v:charconvert_to*
 v:cmdarg	eval.txt	/*v:cmdarg*
 v:cmdbang	eval.txt	/*v:cmdbang*
 v:collate	eval.txt	/*v:collate*
+<<<<<<< HEAD
 v:colornames	eval.txt	/*v:colornames*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 v:completed_item	eval.txt	/*v:completed_item*
 v:count	eval.txt	/*v:count*
 v:count1	eval.txt	/*v:count1*

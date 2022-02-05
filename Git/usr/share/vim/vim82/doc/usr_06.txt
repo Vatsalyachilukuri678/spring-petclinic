@@ -184,6 +184,7 @@ this command: >
 	:runtime syntax/colortest.vim
 
 You will see text in various color combinations.  You can check which ones are
+<<<<<<< HEAD
 readable and look nice. These aren't the only colors available to you though.
 You can specify #rrggbb hex colors and you can define new names for hex
 colors in |v:colornames| like so: >
@@ -208,6 +209,9 @@ GUI colors. These are defined in `colors/lists/default.vim`. All such files
 found on the |runtimepath| are loaded each time the colorscheme command is
 run. A canonical list is provided by the vim distribution, which should
 include all X11 colors (previously defined in rgb.txt).
+=======
+readable and look nice.
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 ==============================================================================
 *06.4*	With colors or without colors

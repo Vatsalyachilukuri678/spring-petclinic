@@ -1,7 +1,11 @@
 " Vim support file to detect file types
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
+<<<<<<< HEAD
 " Last Change:	2021 Oct 03
+=======
+" Last Change:	2021 Aug 23
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Listen very carefully, I will say this only once
 if exists("did_load_filetypes")
@@ -488,7 +492,11 @@ au BufNewFile,BufRead *.desktop,*.directory	setf desktop
 au BufNewFile,BufRead dict.conf,.dictrc		setf dictconf
 
 " Dictd config
+<<<<<<< HEAD
 au BufNewFile,BufRead dictd*.conf		setf dictdconf
+=======
+au BufNewFile,BufRead dictd.conf		setf dictdconf
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Diff files
 au BufNewFile,BufRead *.diff,*.rej		setf diff
@@ -707,7 +715,10 @@ au BufNewFile,BufRead *.gpi			setf gnuplot
 
 " Go (Google)
 au BufNewFile,BufRead *.go			setf go
+<<<<<<< HEAD
 au BufNewFile,BufRead Gopkg.lock		setf toml
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " GrADS scripts
 au BufNewFile,BufRead *.gs			setf grads
@@ -877,9 +888,12 @@ au BufNewFile,BufRead *.json-patch			setf json
 " Jupyter Notebook is also json
 au BufNewFile,BufRead *.ipynb				setf json
 
+<<<<<<< HEAD
 " Other files that look like json
 au BufNewFile,BufRead .babelrc,.eslintrc,.prettierrc,.firebaserc  setf json
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " JSONC
 au BufNewFile,BufRead *.jsonc			setf jsonc
 
@@ -1096,9 +1110,12 @@ au BufNewFile,BufRead *.moo			setf moo
 " Modconf
 au BufNewFile,BufRead */etc/modules.conf,*/etc/modules,*/etc/conf.modules setf modconf
 
+<<<<<<< HEAD
 " MPD is based on XML
 au BufNewFile,BufRead *.mpd			setf xml
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Mplayer config
 au BufNewFile,BufRead mplayer.conf,*/.mplayer/config	setf mplayerconf
 
@@ -1117,9 +1134,12 @@ au BufNewFile,BufRead *.mysql			setf mysql
 " Mutt setup files (must be before catch *.rc)
 au BufNewFile,BufRead */etc/Muttrc.d/*		call s:StarSetf('muttrc')
 
+<<<<<<< HEAD
 " Tcl Shell RC file
 au BufNewFile,BufRead tclsh.rc			setf tcl
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " M$ Resource files
 au BufNewFile,BufRead *.rc,*.rch		setf rc
 
@@ -1150,9 +1170,12 @@ au BufNewFile,BufRead Neomuttrc			setf neomuttrc
 " Netrc
 au BufNewFile,BufRead .netrc			setf netrc
 
+<<<<<<< HEAD
 " Nginx
 au BufNewFile,BufRead *.nginx,nginx*.conf,*nginx.conf,*/etc/nginx/*,*/usr/local/nginx/conf/*,*/nginx/*.conf			setf nginx
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Ninja file
 au BufNewFile,BufRead *.ninja			setf ninja
 
@@ -1291,7 +1314,11 @@ au BufNewFile,BufRead *.rcp			setf pilrc
 au BufNewFile,BufRead .pinerc,pinerc,.pinercex,pinercex		setf pine
 
 " Pipenv Pipfiles
+<<<<<<< HEAD
 au BufNewFile,BufRead Pipfile			setf toml
+=======
+au BufNewFile,BufRead Pipfile			setf config
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 au BufNewFile,BufRead Pipfile.lock		setf json
 
 " PL/1, PL/I
@@ -1525,7 +1552,10 @@ au BufNewFile,BufRead [rR]antfile,*.rant,[rR]akefile,*.rake	setf ruby
 
 " Rust
 au BufNewFile,BufRead *.rs			setf rust
+<<<<<<< HEAD
 au BufNewFile,BufRead Cargo.lock,*/.cargo/config,*/.cargo/credentials	setf toml
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " S-lang (or shader language, or SmallLisp)
 au BufNewFile,BufRead *.sl			setf slang
@@ -1816,7 +1846,11 @@ au BufRead,BufNewFile {pending,completed,undo}.data  setf taskdata
 au BufRead,BufNewFile *.task			setf taskedit
 
 " Tcl (JACL too)
+<<<<<<< HEAD
 au BufNewFile,BufRead *.tcl,*.tm,*.tk,*.itcl,*.itk,*.jacl,.tclshrc,.wishrc	setf tcl
+=======
+au BufNewFile,BufRead *.tcl,*.tk,*.itcl,*.itk,*.jacl	setf tcl
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " TealInfo
 au BufNewFile,BufRead *.tli			setf tli
@@ -2010,15 +2044,24 @@ au BufNewFile,BufRead *.ws[fc]			setf wsh
 " XHTML
 au BufNewFile,BufRead *.xhtml,*.xht		setf xhtml
 
+<<<<<<< HEAD
 " X Pixmap (dynamically sets colors, this used to trigger on BufEnter to make
 " it work better, but that breaks setting 'filetype' manually)
 au BufNewFile,BufRead *.xpm
+=======
+" X Pixmap (dynamically sets colors, use BufEnter to make it work better)
+au BufEnter *.xpm
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 	\ if getline(1) =~ "XPM2" |
 	\   setf xpm2 |
 	\ else |
 	\   setf xpm |
 	\ endif
+<<<<<<< HEAD
 au BufNewFile,BufRead *.xpm2			setf xpm2
+=======
+au BufEnter *.xpm2				setf xpm2
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " XFree86 config
 au BufNewFile,BufRead XF86Config
@@ -2153,7 +2196,11 @@ au BufNewFile,BufRead proftpd.conf*					call s:StarSetf('apachestyle')
 
 " More Apache config files
 au BufNewFile,BufRead access.conf*,apache.conf*,apache2.conf*,httpd.conf*,srm.conf*	call s:StarSetf('apache')
+<<<<<<< HEAD
 au BufNewFile,BufRead */etc/apache2/*.conf*,*/etc/apache2/conf.*/*,*/etc/apache2/mods-*/*,*/etc/apache2/sites-*/*,*/etc/httpd/conf.*/*,*/etc/httpd/mods-*/*,*/etc/httpd/sites-*/*,*/etc/httpd/conf.d/*.conf*		call s:StarSetf('apache')
+=======
+au BufNewFile,BufRead */etc/apache2/*.conf*,*/etc/apache2/conf.*/*,*/etc/apache2/mods-*/*,*/etc/apache2/sites-*/*,*/etc/httpd/conf.d/*.conf*		call s:StarSetf('apache')
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Asterisk config file
 au BufNewFile,BufRead *asterisk/*.conf*		call s:StarSetf('asterisk')
@@ -2307,9 +2354,12 @@ au BufNewFile,BufRead .tcshrc*	call dist#ft#SetFileTypeShell("tcsh")
 " csh scripts ending in a star
 au BufNewFile,BufRead .login*,.cshrc*  call dist#ft#CSH()
 
+<<<<<<< HEAD
 " tmux configuration with arbitrary extension
 au BufNewFile,BufRead {.,}tmux*.conf*		setf tmux
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " VHDL
 au BufNewFile,BufRead *.vhdl_[0-9]*		call s:StarSetf('vhdl')
 

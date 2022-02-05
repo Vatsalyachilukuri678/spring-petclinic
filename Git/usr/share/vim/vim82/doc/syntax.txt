@@ -4849,7 +4849,10 @@ in their own color.
 :hi[ghlight] {group-name}
 			List one highlight group.
 
+<<<<<<< HEAD
 						*highlight-clear*
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 :hi[ghlight] clear	Reset all highlighting to the defaults.  Removes all
 			highlighting for groups added by the user!
 			Uses the current value of 'background' to decide which
@@ -5144,6 +5147,7 @@ guisp={color-name}					*highlight-guisp*
 		"gg"	is the Green value
 		"bb"	is the Blue value
 	All values are hexadecimal, range from "00" to "ff".  Examples: >
+<<<<<<< HEAD
             :highlight Comment guifg=#11f0c3 guibg=#ff00ff
 <
 	If you are authoring a color scheme and use the same hexademical value
@@ -5173,6 +5177,10 @@ guisp={color-name}					*highlight-guisp*
 	    :highlight Comment guifg=css_turquoise
 <
 
+=======
+  :highlight Comment guifg=#11f0c3 guibg=#ff00ff
+<
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 					*highlight-groups* *highlight-default*
 These are the default highlighting groups.  These groups are used by the
 'highlight' option default.  Note that the highlighting depends on the value

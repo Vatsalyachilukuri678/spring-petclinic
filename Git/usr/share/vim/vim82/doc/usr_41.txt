@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *usr_41.txt*	For Vim version 8.2.  Last change: 2021 Sep 10
+=======
+*usr_41.txt*	For Vim version 8.2.  Last change: 2021 Aug 08
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 		     VIM USER MANUAL - by Bram Moolenaar
 
@@ -925,8 +929,11 @@ Syntax and highlighting:	  *syntax-functions* *highlighting-functions*
 	getmatches()		get all matches defined by |matchadd()| and
 				the |:match| commands
 	hlexists()		check if a highlight group exists
+<<<<<<< HEAD
 	hlget()			get highlight group attributes
 	hlset()			set highlight group attributes
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 	hlID()			get ID of a highlight group
 	synID()			get syntax ID at a specific position
 	synIDattr()		get a specific attribute of a syntax ID

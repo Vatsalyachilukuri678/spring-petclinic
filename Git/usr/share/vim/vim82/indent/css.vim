@@ -1,10 +1,17 @@
 " Vim indent file
+<<<<<<< HEAD
 " Language:		CSS
 " Maintainer:		Doug Kearns <dougkearns@gmail.com>
 " Previous Maintainer:	Nikolai Weibull <now@bitwi.se>
 " Last Change:		24 Sep 2021
 
 " Use of shiftwidth() added by Oleg Zubchenko.
+=======
+" Language:	    CSS
+" Maintainer:	    Nikolai Weibull <now@bitwi.se>
+" Latest Revision:  2012-05-30
+"		    Use of shiftwidth() added by Oleg Zubchenko.	
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 if exists("b:did_indent")
   finish
@@ -15,7 +22,11 @@ setlocal indentexpr=GetCSSIndent()
 setlocal indentkeys=0{,0},!^F,o,O
 setlocal nosmartindent
 
+<<<<<<< HEAD
 let b:undo_indent = "setl inde< indk< si<"
+=======
+let b:undo_indent = "setl smartindent< indentkeys< indentexpr<"
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 if exists("*GetCSSIndent")
   finish

@@ -2,6 +2,7 @@ NOTE: We are looking for help with a few things:
       https://github.com/libexpat/libexpat/labels/help%20wanted
       If you can help, please get in touch.  Thanks!
 
+<<<<<<< HEAD
 Release 2.4.4 Sun January 30 2022
         Security fixes:
             #550  CVE-2022-23852 -- Fix signed integer overflow
@@ -109,6 +110,8 @@ Release 2.4.2 Sun December 19 2021
             Joergen Ibsen
             Kai Pastor
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 Release 2.4.1 Sun May 23 2021
         Bug fixes:
        #488 #490  Autotools: Fix installed header expat_config.h for multilib

@@ -5,7 +5,11 @@
 " go.vim: Vim syntax file for Go.
 " Language:             Go
 " Maintainer:           Billie Cleek <bhcleek@gmail.com>
+<<<<<<< HEAD
 " Latest Revision:      2021-09-18
+=======
+" Latest Revision:      2021-06-26
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " License:              BSD-style. See LICENSE file in source repository.
 " Repository:           https://github.com/fatih/vim-go
 
@@ -250,7 +254,11 @@ syn match       goDecimalError      "\<-\=\(_\(\d\+_*\)\+\|\([1-9]\d*_*\)\+__\(\
 syn match       goHexadecimalInt    "\<-\=0[xX]_\?\(\x\+_\?\)\+\>"
 syn match       goHexadecimalError  "\<-\=0[xX]_\?\(\x\+_\?\)*\(\([^ \t0-9A-Fa-f_)]\|__\)\S*\|_\)\>"
 syn match       goOctalInt          "\<-\=0[oO]\?_\?\(\o\+_\?\)\+\>"
+<<<<<<< HEAD
 syn match       goOctalError        "\<-\=0[0-7oO_]*\(\([^ \t0-7oOxX_/)\]\}\:;]\|[oO]\{2,\}\|__\)\S*\|_\|[oOxX]\)\>"
+=======
+syn match       goOctalError        "\<-\=0[0-7oO_]*\(\([^ \t0-7oOxX_/)\]\}\:]\|[oO]\{2,\}\|__\)\S*\|_\|[oOxX]\)\>"
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn match       goBinaryInt         "\<-\=0[bB]_\?\([01]\+_\?\)\+\>"
 syn match       goBinaryError       "\<-\=0[bB]_\?[01_]*\([^ \t01_)]\S*\|__\S*\|_\)\>"
 
@@ -430,7 +438,11 @@ endif
 
 " Build Constraints
 if s:HighlightBuildConstraints()
+<<<<<<< HEAD
   syn match   goBuildKeyword      display contained "+build\|go:build"
+=======
+  syn match   goBuildKeyword      display contained "+build"
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
   " Highlight the known values of GOOS, GOARCH, and other +build options.
   syn keyword goBuildDirectives   contained
         \ android darwin dragonfly freebsd linux nacl netbsd openbsd plan9

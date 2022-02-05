@@ -1,7 +1,13 @@
 " Vim indent file for the D programming language (version 0.137).
+<<<<<<< HEAD
 " Language:	D
 " Maintainer:	Jason Mills <jmills@cs.mun.ca> (Invalid email address)
 " 		Doug Kearns <dougkearns@gmail.com>
+=======
+"
+" Language:	D
+" Maintainer:	Jason Mills<jmills@cs.mun.ca>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Last Change:	2005 Nov 22
 " Version:	0.1
 "

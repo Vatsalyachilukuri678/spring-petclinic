@@ -3,7 +3,11 @@
 " Maintainer:  Debian Vim Maintainers
 " Former Maintainers: Gerfried Fuchs <alfie@ist.org>
 "                     Wichert Akkerman <wakkerma@debian.org>
+<<<<<<< HEAD
 " Last Change: 2021 Oct 19
+=======
+" Last Change: 2021 Aug 03
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " URL: https://salsa.debian.org/vim-team/vim-debian/blob/master/syntax/debchangelog.vim
 
 " Standard syntax initialization
@@ -24,8 +28,12 @@ let s:supported = [
       \ 'jessie', 'stretch', 'buster', 'bullseye', 'bookworm',
       \ 'trixie', 'sid', 'rc-buggy',
       \
+<<<<<<< HEAD
       \ 'trusty', 'xenial', 'bionic', 'focal', 'hirsute', 'impish', 'jammy',
       \ 'devel'
+=======
+      \ 'trusty', 'xenial', 'bionic', 'focal', 'hirsute', 'impish', 'devel'
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
       \ ]
 let s:unsupported = [
       \ 'frozen', 'buzz', 'rex', 'bo', 'hamm', 'slink', 'potato',

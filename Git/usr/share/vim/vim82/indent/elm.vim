@@ -4,7 +4,11 @@
 " Original Author: Joseph Hager <ajhager@gmail.com>
 " Copyright: Joseph Hager <ajhager@gmail.com>
 " License: BSD3
+<<<<<<< HEAD
 " Latest Revision: 2021-09-29
+=======
+" Latest Revision: 2020-05-29
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Only load this indent file when no other was loaded.
 if exists('b:did_indent')
@@ -19,8 +23,11 @@ setlocal indentkeys+=0=else,0=if,0=of,0=import,0=then,0=type,0\|,0},0\],0),=-},0
 setlocal nolisp
 setlocal nosmartindent
 
+<<<<<<< HEAD
 let b:undo_indent = "setl et< inde< indk< lisp< si<"
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Only define the function once.
 if exists('*GetElmIndent')
 	finish

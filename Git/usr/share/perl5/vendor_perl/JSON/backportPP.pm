@@ -15,7 +15,11 @@ use JSON::backportPP::Boolean;
 use Carp ();
 #use Devel::Peek;
 
+<<<<<<< HEAD
 $JSON::backportPP::VERSION = '4.07';
+=======
+$JSON::backportPP::VERSION = '4.06';
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 @JSON::PP::EXPORT = qw(encode_json decode_json from_json to_json);
 
@@ -1566,11 +1570,14 @@ sub incr_parse {
                     }
                 }
 
+<<<<<<< HEAD
                 unless ( $coder->get_utf8 ) {
                     utf8::upgrade( $self->{incr_text} );
                     utf8::decode( $self->{incr_text} );
                 }
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
                 my ($obj, $offset) = $coder->PP_decode_json( $self->{incr_text}, 0x00000001 );
                 push @ret, $obj;
                 use bytes;
@@ -1778,6 +1785,13 @@ JSON::PP - JSON::XS compatible pure-Perl module.
  use JSON;
 
 
+<<<<<<< HEAD
+=======
+=head1 VERSION
+
+    4.05
+
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 =head1 DESCRIPTION
 
 JSON::PP is a pure perl JSON decoder/encoder, and (almost) compatible to much

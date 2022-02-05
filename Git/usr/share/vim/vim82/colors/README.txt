@@ -87,5 +87,9 @@ please check the following items:
 - In the GUI, is it easy to find the cursor, also in a file with lots of
   syntax highlighting?
 - Do not use hard coded escape sequences, these will not work in other
+<<<<<<< HEAD
   terminals.  Always use color names or #RRGGBB for the GUI. See v:colornames
   for details on how to define your own color names.
+=======
+  terminals.  Always use color names or #RRGGBB for the GUI.
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c

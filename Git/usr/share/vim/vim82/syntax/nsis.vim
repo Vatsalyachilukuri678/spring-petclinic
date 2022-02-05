@@ -1,9 +1,17 @@
 " Vim syntax file
+<<<<<<< HEAD
 " Language:		NSIS script, for version of NSIS 3.08 and later
 " Maintainer:		Ken Takata
 " URL:			https://github.com/k-takata/vim-nsis
 " Previous Maintainer:	Alex Jakushev <Alex.Jakushev@kemek.lt>
 " Last Change:		2020-10-18
+=======
+" Language:		NSIS script, for version of NSIS 3.03 and later
+" Maintainer:		Ken Takata
+" URL:			https://github.com/k-takata/vim-nsis
+" Previous Maintainer:	Alex Jakushev <Alex.Jakushev@kemek.lt>
+" Last Change:		2018-10-02
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " quit when a syntax file was already loaded
 if exists("b:current_syntax")
@@ -97,8 +105,11 @@ syn match nsisSysVar		"$RESOURCES_LOCALIZED"
 syn match nsisSysVar		"$CDBURN_AREA"
 syn match nsisSysVar		"$HWNDPARENT"
 syn match nsisSysVar		"$PLUGINSDIR"
+<<<<<<< HEAD
 syn match nsisSysVar		"$\%(USERTEMPLATES\|USERSTARTMENU\|USERSMPROGRAMS\|USERDESKTOP\)"
 syn match nsisSysVar		"$\%(COMMONTEMPLATES\|COMMONSTARTMENU\|COMMONSMPROGRAMS\|COMMONDESKTOP\|COMMONPROGRAMDATA\)"
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn match nsisSysVar		"$\\r"
 syn match nsisSysVar		"$\\n"
 syn match nsisSysVar		"$\\t"
@@ -151,7 +162,11 @@ syn keyword nsisStatement	contained Section nextgroup=nsisSectionOpt skipwhite
 syn region nsisSectionOpt	contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisSectionKwd
 syn match nsisSectionKwd	contained "/o\>"
 
+<<<<<<< HEAD
 syn keyword nsisStatement	contained SectionInstType SectionIn nextgroup=nsisSectionInOpt skipwhite
+=======
+syn keyword nsisStatement	contained SectionIn nextgroup=nsisSectionInOpt skipwhite
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn region nsisSectionInOpt	contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisSectionInKwd
 syn keyword nsisSectionInKwd	contained RO
 
@@ -271,14 +286,18 @@ syn keyword nsisAttribute	contained ManifestDPIAware nextgroup=nsisManifestDPIAw
 syn region nsisManifestDPIAwareOpt	contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisManifestDPIAwareKwd
 syn keyword nsisManifestDPIAwareKwd	contained notset true false
 
+<<<<<<< HEAD
 syn keyword nsisAttribute	contained ManifestLongPathAware nextgroup=nsisManifestLongPathAwareOpt skipwhite
 syn region nsisManifestLongPathAwareOpt	contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisManifestLongPathAwareKwd
 syn match nsisManifestLongPathAwareKwd	contained "\<\%(notset\|true\|false\)\>"
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn keyword nsisAttribute	contained ManifestSupportedOS nextgroup=nsisManifestSupportedOSOpt skipwhite
 syn region nsisManifestSupportedOSOpt	contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisManifestSupportedOSKwd
 syn match nsisManifestSupportedOSKwd	contained "\<\%(none\|all\|WinVista\|Win7\|Win8\|Win8\.1\|Win10\)\>"
 
+<<<<<<< HEAD
 syn keyword nsisAttribute	contained PEAddResource nextgroup=nsisPEAddResourceOpt skipwhite
 syn region nsisPEAddResourceOpt	contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisPEAddResourceKwd
 syn match nsisPEAddResourceKwd	contained "/\%(OVERWRITE\|REPLACE\)\>"
@@ -287,6 +306,8 @@ syn keyword nsisAttribute	contained PERemoveResource nextgroup=nsisPERemoveResou
 syn region nsisPERemoveResourceOpt	contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisPERemoveResourceKwd
 syn match nsisPERemoveResourceKwd	contained "/NOERRORS\>"
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn keyword nsisAttribute	contained RequestExecutionLevel nextgroup=nsisRequestExecutionLevelOpt skipwhite
 syn region nsisRequestExecutionLevelOpt  contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisRequestExecutionLevelKwd
 syn keyword nsisRequestExecutionLevelKwd contained none user highest admin
@@ -367,7 +388,11 @@ syn keyword nsisInstruction	contained ExpandEnvStrings ReadEnvStr
 
 syn keyword nsisInstruction	contained DeleteRegKey nextgroup=nsisDeleteRegKeyOpt skipwhite
 syn region nsisDeleteRegKeyOpt	contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisDeleteRegKeyKwd,nsisRegistry
+<<<<<<< HEAD
 syn match nsisDeleteRegKeyKwd	contained "/\%(ifempty\|ifnosubkeys\|ifnovalues\)\>"
+=======
+syn match nsisDeleteRegKeyKwd	contained "/ifempty\>"
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 syn keyword nsisInstruction	contained nextgroup=nsisRegistryOpt skipwhite
 			\ DeleteRegValue EnumRegKey EnumRegValue ReadRegDWORD ReadRegStr WriteRegBin WriteRegDWORD WriteRegExpandStr WriteRegStr
@@ -382,8 +407,13 @@ syn region nsisSetRegViewOpt	contained start="" end="$" transparent keepend cont
 syn keyword nsisSetRegViewKwd	contained default lastused
 
 "FUNCTIONS - general purpose (4.9.3)
+<<<<<<< HEAD
 syn keyword nsisInstruction	contained CallInstDLL CreateDirectory GetWinVer
 syn keyword nsisInstruction	contained GetFileTime GetFileTimeLocal GetKnownFolderPath
+=======
+syn keyword nsisInstruction	contained CallInstDLL CreateDirectory GetDLLVersion
+syn keyword nsisInstruction	contained GetDLLVersionLocal GetFileTime GetFileTimeLocal
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn keyword nsisInstruction	contained GetTempFileName SearchPath RegDLL UnRegDLL
 
 syn keyword nsisInstruction	contained CopyFiles nextgroup=nsisCopyFilesOpt skipwhite
@@ -394,10 +424,13 @@ syn keyword nsisInstruction	contained CreateShortcut nextgroup=nsisCreateShortcu
 syn region nsisCreateShortcutOpt contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisCreateShortcutKwd
 syn match nsisCreateShortcutKwd	 contained "/NoWorkingDir\>"
 
+<<<<<<< HEAD
 syn keyword nsisInstruction	contained GetDLLVersion GetDLLVersionLocal nextgroup=nsisGetDLLVersionOpt skipwhite
 syn region nsisGetDLLVersionOpt contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisGetDLLVersionKwd
 syn match nsisGetDLLVersionKwd	 contained "/ProductVersion\>"
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn keyword nsisInstruction	contained GetFullPathName nextgroup=nsisGetFullPathNameOpt skipwhite
 syn region nsisGetFullPathNameOpt contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisGetFullPathNameKwd
 syn match nsisGetFullPathNameKwd  contained "/SHORT\>"
@@ -413,7 +446,10 @@ syn keyword nsisFileAttrib	contained FILE_ATTRIBUTE_TEMPORARY
 syn keyword nsisInstruction	contained Abort Call ClearErrors GetCurrentAddress
 syn keyword nsisInstruction	contained GetFunctionAddress GetLabelAddress Goto
 syn keyword nsisInstruction	contained IfAbort IfErrors IfFileExists IfRebootFlag IfSilent
+<<<<<<< HEAD
 syn keyword nsisInstruction	contained IfShellVarContextAll IfRtlLanguage
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn keyword nsisInstruction	contained IntCmp IntCmpU Int64Cmp Int64CmpU IntPtrCmp IntPtrCmpU
 syn keyword nsisInstruction	contained Return Quit SetErrors StrCmp StrCmpS
 
@@ -479,10 +515,13 @@ syn keyword nsisInstruction	contained CreateFont nextgroup=nsisFontOpt skipwhite
 syn keyword nsisInstruction	contained nextgroup=nsisBooleanOpt skipwhite
 			\ LockWindow SetAutoClose
 
+<<<<<<< HEAD
 syn keyword nsisInstruction	contained LoadAndSetImage nextgroup=nsisLoadAndSetImageOpt skipwhite
 syn region nsisLoadAndSetImageOpt contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisLoadAndSetImageKwd
 syn match nsisLoadAndSetImageKwd  contained "/\%(EXERESOURCE\|STRINGID\|RESIZETOFIT\%(WIDTH\|HEIGHT\)\)\>"
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 syn keyword nsisInstruction	contained SendMessage nextgroup=nsisSendMessageOpt skipwhite
 syn region nsisSendMessageOpt	contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisSendMessageKwd
 syn match nsisSendMessageKwd	contained "/TIMEOUT\>"
@@ -579,7 +618,11 @@ syn keyword nsisVerboseKwd	contained push pop
 "PREPROCESSOR (5.4)
 syn match nsisDefine		contained "!define\>" nextgroup=nsisDefineOpt skipwhite
 syn region nsisDefineOpt	contained start="" end="$" transparent keepend contains=@nsisAnyOpt,nsisDefineKwd
+<<<<<<< HEAD
 syn match nsisDefineKwd		contained "/\%(ifndef\|redef\|date\|utcdate\|file\|intfmt\|math\)\>"
+=======
+syn match nsisDefineKwd		contained "/\%(ifndef\|redef\|date\|utcdate\|math\|file\)\>"
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 syn match nsisDefine		contained "!undef\>"
 syn match nsisPreCondit		contained "!ifdef\>"
@@ -638,10 +681,14 @@ hi def link nsisInstTypeKwd		Constant
 hi def link nsisLicenseBkColorKwd	Constant
 hi def link nsisLicenseForceSelectionKwd Constant
 hi def link nsisManifestDPIAwareKwd	Constant
+<<<<<<< HEAD
 hi def link nsisManifestLongPathAwareKwd Constant
 hi def link nsisManifestSupportedOSKwd	Constant
 hi def link nsisPEAddResourceKwd	Constant
 hi def link nsisPERemoveResourceKwd	Constant
+=======
+hi def link nsisManifestSupportedOSKwd	Constant
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 hi def link nsisRequestExecutionLevelKwd Constant
 hi def link nsisShowInstDetailsKwd	Constant
 hi def link nsisSilentInstallKwd	Constant
@@ -659,13 +706,19 @@ hi def link nsisWriteRegMultiStrKwd	Constant
 hi def link nsisSetRegViewKwd		Constant
 hi def link nsisCopyFilesKwd		Constant
 hi def link nsisCreateShortcutKwd	Constant
+<<<<<<< HEAD
 hi def link nsisGetDLLVersionKwd	Constant
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 hi def link nsisGetFullPathNameKwd	Constant
 hi def link nsisFileAttrib		Constant
 hi def link nsisMessageBox		Constant
 hi def link nsisFileWriteUTF16LEKwd	Constant
 hi def link nsisSetShellVarContextKwd	Constant
+<<<<<<< HEAD
 hi def link nsisLoadAndSetImageKwd	Constant
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 hi def link nsisSendMessageKwd		Constant
 hi def link nsisSetBrandingImageKwd	Constant
 hi def link nsisSetDetailsViewKwd	Constant

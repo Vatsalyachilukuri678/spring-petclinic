@@ -2,7 +2,11 @@
 " Language:	MSDOS batch file (with NT command extensions)
 " Maintainer:	Ken Takata
 " URL:		https://github.com/k-takata/vim-dosbatch-indent
+<<<<<<< HEAD
 " Last Change:	2021-10-18
+=======
+" Last Change:	2017 May 10
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Filenames:	*.bat
 " License:	VIM License
 
@@ -17,8 +21,11 @@ setlocal indentexpr=GetDosBatchIndent(v:lnum)
 setlocal indentkeys=!^F,o,O
 setlocal indentkeys+=0=)
 
+<<<<<<< HEAD
 let b:undo_indent = "setl ai< inde< indk< si<"
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 if exists("*GetDosBatchIndent")
   finish
 endif

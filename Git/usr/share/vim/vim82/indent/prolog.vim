@@ -1,8 +1,14 @@
 "  vim: set sw=4 sts=4:
+<<<<<<< HEAD
 "  Language:	Prolog
 "  Maintainer:	Gergely Kontra <kgergely@mcl.hu> (Invalid email address)
 " 		Doug Kearns <dougkearns@gmail.com>
 "  Revised on:	2002.02.18. 23:34:05
+=======
+"  Maintainer	: Gergely Kontra <kgergely@mcl.hu>
+"  Revised on	: 2002.02.18. 23:34:05
+"  Language	: Prolog
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 "  Last change by: Takuya Fujiwara, 2018 Sep 23
 
 " TODO:

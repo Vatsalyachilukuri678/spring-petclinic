@@ -1,7 +1,11 @@
 " Vim indent file
 " Language:	SDL
 " Maintainer:	Michael Piefel <entwurf@piefel.de>
+<<<<<<< HEAD
 " Last Change:	2021 Oct 03
+=======
+" Last Change:	10 December 2011
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " Shamelessly stolen from the Vim-Script indent file
 
@@ -14,8 +18,11 @@ let b:did_indent = 1
 setlocal indentexpr=GetSDLIndent()
 setlocal indentkeys+==~end,=~state,*<Return>
 
+<<<<<<< HEAD
 let b:undo_indent = "setl inde< indk<"
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 " Only define the function once.
 if exists("*GetSDLIndent")
 "  finish

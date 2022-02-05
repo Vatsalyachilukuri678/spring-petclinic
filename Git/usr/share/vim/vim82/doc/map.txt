@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *map.txt*       For Vim version 8.2.  Last change: 2021 Oct 19
+=======
+*map.txt*       For Vim version 8.2.  Last change: 2021 Aug 05
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 
 		  VIM REFERENCE MANUAL    by Bram Moolenaar
@@ -1004,9 +1008,12 @@ Also note that the 'clipboard' option is temporarily emptied to avoid
 clobbering the `"*` or `"+` registers, if its value contains the item `unnamed`
 or `unnamedplus`.
 
+<<<<<<< HEAD
 The `mode()` function will return the state as it will be after applying the
 operator.
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 ==============================================================================
 2. Abbreviations			*abbreviations* *Abbreviations*
 

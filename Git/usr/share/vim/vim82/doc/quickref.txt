@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *quickref.txt*  For Vim version 8.2.  Last change: 2021 Oct 17
+=======
+*quickref.txt*  For Vim version 8.2.  Last change: 2021 Mar 29
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 
 		  VIM REFERENCE MANUAL    by Bram Moolenaar
@@ -732,7 +736,10 @@ Short explanation of each option:		*option-list*
 'guifontset'	  'gfs'     GUI: Names of multibyte fonts to be used
 'guifontwide'	  'gfw'     list of font names for double-wide characters
 'guiheadroom'	  'ghr'     GUI: pixels room for window decorations
+<<<<<<< HEAD
 'guiligatures'	  'gli'	    GTK GUI: ASCII characters that can form shapes
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 'guioptions'	  'go'	    GUI: Which components and options are used
 'guipty'		    GUI: try to use a pseudo-tty for ":!" commands
 'guitablabel'	  'gtl'     GUI: custom label for a tab page
@@ -949,7 +956,10 @@ Short explanation of each option:		*option-list*
 'textmode'	  'tx'	    obsolete, use 'fileformat'
 'textwidth'	  'tw'	    maximum width of text that is being inserted
 'thesaurus'	  'tsr'     list of thesaurus files for keyword completion
+<<<<<<< HEAD
 'thesaurusfunc'	  'tsrfu'   function to be used for thesaurus completion
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 'tildeop'	  'top'     tilde command "~" behaves like an operator
 'timeout'	  'to'	    time out on mappings and key codes
 'timeoutlen'	  'tm'	    time out time in milliseconds

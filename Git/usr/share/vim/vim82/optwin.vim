@@ -1,7 +1,11 @@
 " These commands create the option window.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
+<<<<<<< HEAD
 " Last Change:	2021 Oct 17
+=======
+" Last Change:	2020 Oct 27
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " If there already is an option window, jump to that one.
 let buf = bufnr('option-window')
@@ -652,8 +656,11 @@ if has("gui")
     endif
     call <SID>AddOption("guiheadroom", gettext("room (in pixels) left above/below the window"))
     call append("$", " \tset ghr=" . &ghr)
+<<<<<<< HEAD
     call <SID>AddOption("guiligatures", gettext("list of ASCII characters that can be combined into complesshapes"))
     call <SID>OptionG("gli", &gli)
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
   endif
   if has("directx")
     call <SID>AddOption("renderoptions", gettext("options for text rendering"))
@@ -842,9 +849,12 @@ if has("insert_expand")
   call <SID>AddOption("thesaurus", gettext("list of thesaurus files for keyword completion"))
   call append("$", "\t" .. s:global_or_local)
   call <SID>OptionG("tsr", &tsr)
+<<<<<<< HEAD
   call <SID>AddOption("thesaurusfunc", gettext("function used for thesaurus completion"))
   call append("$", "\t" .. s:global_or_local)
   call <SID>OptionG("tsrfu", &tsrfu)
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 endif
 call <SID>AddOption("infercase", gettext("adjust case of a keyword completion match"))
 call append("$", "\t" .. s:local_to_buffer)

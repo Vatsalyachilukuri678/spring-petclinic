@@ -1,6 +1,10 @@
 #! /bin/sh
 #
+<<<<<<< HEAD
 # Copyright (C) 2003, 2005-2007, 2011, 2018-2020 Free Software Foundation, Inc.
+=======
+# Copyright (C) 2003, 2005-2007, 2011, 2015-2016 Free Software Foundation, Inc.
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Lesser General Public License as published by
@@ -13,7 +17,11 @@
 # GNU Lesser General Public License for more details.
 #
 # You should have received a copy of the GNU Lesser General Public License
+<<<<<<< HEAD
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
+=======
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 #
 
 # Find a way to echo strings without interpreting backslash.
@@ -48,7 +56,11 @@ if test -z "${ZSH_VERSION+set}"; then
     gettext.sh | */gettext.sh | *\\gettext.sh)
       progname=$0
       package=gettext-runtime
+<<<<<<< HEAD
       version=0.21
+=======
+      version=0.19.8.1
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
       # func_usage
       # outputs to stdout the --help usage message.
       func_usage ()
@@ -61,8 +73,13 @@ if test -z "${ZSH_VERSION+set}"; then
       func_version ()
       {
         echo "$progname (GNU $package) $version"
+<<<<<<< HEAD
         echo "Copyright (C) 2003-2020 Free Software Foundation, Inc.
 License GPLv2+: GNU GPL version 2 or later <https://gnu.org/licenses/gpl.html>
+=======
+        echo "Copyright (C) 2003-2007 Free Software Foundation, Inc.
+License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law."
         echo "Written by" "Bruno Haible"
@@ -95,6 +112,7 @@ eval_ngettext () {
   ngettext "$1" "$2" "$3" | (export PATH `envsubst --variables "$1 $2"`; envsubst "$1 $2")
 }
 
+<<<<<<< HEAD
 # eval_pgettext MSGCTXT MSGID
 # looks up the translation of MSGID in the context MSGCTXT and substitutes
 # shell variables in the result.
@@ -109,6 +127,8 @@ eval_npgettext () {
   ngettext --context="$1" "$2" "$3" "$4" | (export PATH `envsubst --variables "$2 $3"`; envsubst "$2 $3")
 }
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 # Note: This use of envsubst is much safer than using the shell built-in 'eval'
 # would be.
 # 1) The security problem with Chinese translations that happen to use a

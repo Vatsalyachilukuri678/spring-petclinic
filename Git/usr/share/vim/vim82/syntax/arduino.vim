@@ -1,6 +1,7 @@
 " Vim syntax file
 " Language:    Arduino
 " Maintainer:  Johannes Hoff <johannes@johanneshoff.com>
+<<<<<<< HEAD
 " Last Change: 21 October 2021
 " License:     VIM license (:help license, replace vim by arduino.vim)
 
@@ -18,10 +19,24 @@
 if version < 600
   syntax clear
 elseif exists("b:current_syntax")
+=======
+" Last Change: 2011 June 3
+" License:     VIM license (:help license, replace vim by arduino.vim)
+
+" Syntax highlighting like in the Arduino IDE
+" Keywords extracted from <arduino>/build/shared/lib/keywords.txt (arduino
+" version 0021)
+
+" Thanks to Rik, Erik Nomitch, Adam Obeng and Graeme Cross for helpful feedback!
+
+" quit when a syntax file was already loaded
+if exists("b:current_syntax")
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
   finish
 endif
 
 " Read the C syntax to start with
+<<<<<<< HEAD
 if version < 600
   so <sfile>:p:h/cpp.vim
 else
@@ -74,6 +89,37 @@ syn keyword arduinoType      atomic_schar atomic_short atomic_uchar atomic_uint
 syn keyword arduinoType      atomic_ullong atomic_ulong atomic_ushort boolean
 syn keyword arduinoType      byte char16_t char32_t complex NULL null PROGMEM
 syn keyword arduinoType      String word
+=======
+runtime! syntax/cpp.vim
+
+syn keyword arduinoConstant HIGH LOW INPUT OUTPUT
+syn keyword arduinoConstant DEC BIN HEX OCT BYTE
+syn keyword arduinoConstant PI HALF_PI TWO_PI
+syn keyword arduinoConstant LSBFIRST MSBFIRST 
+syn keyword arduinoConstant CHANGE FALLING RISING 
+syn keyword arduinoConstant SERIAL DISPLAY
+syn keyword arduinoConstant DEFAULT EXTERNAL INTERNAL INTERNAL1V1 INTERNAL2V56
+
+syn keyword arduinoStdFunc abs acos asin atan atan2 ceil constrain
+syn keyword arduinoStdFunc cos degrees exp floor log
+syn keyword arduinoStdFunc map max min pow radians 
+syn keyword arduinoStdFunc round sin sq sqrt tan
+syn keyword arduinoStdFunc randomSeed random
+
+syn keyword arduinoFunc analogReference analogRead analogWrite 
+syn keyword arduinoFunc attachInterrupt detachInterrupt interrupts noInterrupts 
+syn keyword arduinoFunc lowByte highByte bitRead bitWrite bitSet bitClear
+syn keyword arduinoFunc millis micros delay delayMicroseconds 
+syn keyword arduinoFunc pinMode digitalWrite digitalRead 
+syn keyword arduinoFunc tone noTone pulseIn shiftOut 
+
+syn keyword arduinoMethod setup loop
+syn keyword arduinoMethod begin end available read flush print println write peek
+
+syn keyword arduinoType boolean byte word String 
+
+syn keyword arduinoModule Serial Serial1 Serial2 Serial3
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 hi def link arduinoType Type
 hi def link arduinoConstant Constant

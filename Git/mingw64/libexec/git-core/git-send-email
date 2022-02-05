@@ -83,8 +83,12 @@ package main;
 
 sub usage {
 	print <<EOT;
+<<<<<<< HEAD
 git send-email' [<options>] <file|directory>
 git send-email' [<options>] <format-patch options>
+=======
+git send-email [options] <file | directory | rev-list options >
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 git send-email --dump-aliases
 
   Composing:
@@ -157,6 +161,7 @@ EOT
 	exit(1);
 }
 
+<<<<<<< HEAD
 sub uniq {
 	my %seen;
 	grep !$seen{$_}++, @_;
@@ -189,6 +194,11 @@ sub completion_helper {
 	# There's an implicit '\n' here already, no need to add an explicit one.
 	print "@opts";
 	exit(0);
+=======
+sub completion_helper {
+    print Git::command('format-patch', '--git-completion-helper');
+    exit(0);
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 }
 
 # most mail servers generate the Date: header, but not all...
@@ -498,11 +508,18 @@ my %known_config_keys;
 	my $key = "sendemail.identity";
 	$identity = Git::config(@repo, $key) if exists $known_config_keys{$key};
 }
+<<<<<<< HEAD
 my %identity_options = (
 	"identity=s" => \$identity,
 	"no-identity" => \$no_identity,
 );
 my $rc = GetOptions(%identity_options);
+=======
+my $rc = GetOptions(
+	"identity=s" => \$identity,
+	"no-identity" => \$no_identity,
+);
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 usage() unless $rc;
 undef $identity if $no_identity;
 
@@ -518,6 +535,7 @@ undef $identity if $no_identity;
 
 my $help;
 my $git_completion_helper;
+<<<<<<< HEAD
 my %dump_aliases_options = (
 	"h" => \$help,
 	"dump-aliases" => \$dump_aliases,
@@ -529,6 +547,16 @@ die __("--dump-aliases incompatible with other options\n")
 my %options = (
 		    "sender|from=s" => \$sender,
 		    "in-reply-to=s" => \$initial_in_reply_to,
+=======
+$rc = GetOptions("h" => \$help,
+                 "dump-aliases" => \$dump_aliases);
+usage() unless $rc;
+die __("--dump-aliases incompatible with other options\n")
+    if !$help and $dump_aliases and @ARGV;
+$rc = GetOptions(
+		    "sender|from=s" => \$sender,
+                    "in-reply-to=s" => \$initial_in_reply_to,
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 		    "reply-to=s" => \$reply_to,
 		    "subject=s" => \$initial_subject,
 		    "to=s" => \@getopt_to,
@@ -585,8 +613,12 @@ my %options = (
 		    "batch-size=i" => \$batch_size,
 		    "relogin-delay=i" => \$relogin_delay,
 		    "git-completion-helper" => \$git_completion_helper,
+<<<<<<< HEAD
 );
 $rc = GetOptions(%options);
+=======
+	 );
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 # Munge any "either config or getopt, not both" variables
 my @initial_to = @getopt_to ? @getopt_to : ($no_to ? () : @config_to);
@@ -594,8 +626,12 @@ my @initial_cc = @getopt_cc ? @getopt_cc : ($no_cc ? () : @config_cc);
 my @initial_bcc = @getopt_bcc ? @getopt_bcc : ($no_bcc ? () : @config_bcc);
 
 usage() if $help;
+<<<<<<< HEAD
 my %all_options = (%options, %dump_aliases_options, %identity_options);
 completion_helper(\%all_options) if $git_completion_helper;
+=======
+completion_helper() if $git_completion_helper;
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 unless ($rc) {
     usage();
 }
@@ -1557,7 +1593,11 @@ sub send_message {
 	@recipients = unique_email_list(@recipients,@cc,@initial_bcc);
 	@recipients = (map { extract_valid_address_or_die($_) } @recipients);
 	my $date = format_2822_time($time++);
+<<<<<<< HEAD
 	my $gitversion = '2.35.1.windows.2';
+=======
+	my $gitversion = '2.34.1.windows.1';
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 	if ($gitversion =~ m/..GIT_VERSION../) {
 	    $gitversion = Git::version();
 	}

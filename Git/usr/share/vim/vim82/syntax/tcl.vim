@@ -6,9 +6,15 @@
 "		(previously Matt Neumann <mattneu@purpleturtle.com>)
 "		(previously Allan Kelly <allan@fruitloaf.co.uk>)
 " Original:	Robin Becker <robin@jessikat.demon.co.uk>
+<<<<<<< HEAD
 " Last Change:	2021 Oct 03
 " Version:	1.14
 " URL:		(removed, no longer worked)
+=======
+" Last Change:	2014-02-12
+" Version:	1.14
+" URL:		http://bitbucket.org/taylor_venable/metasyntax/src/tip/Config/vim/syntax/tcl.vim
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 " quit when a syntax file was already loaded
 if exists("b:current_syntax")

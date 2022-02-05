@@ -11,7 +11,11 @@ overload::import('overload',
     fallback => 1,
 );
 
+<<<<<<< HEAD
 $JSON::backportPP::Boolean::VERSION = '4.07';
+=======
+$JSON::backportPP::Boolean::VERSION = '4.06';
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 1;
 

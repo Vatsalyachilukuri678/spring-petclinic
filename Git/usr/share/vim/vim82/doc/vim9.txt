@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 *vim9.txt*	For Vim version 8.2.  Last change: 2021 Sep 13
+=======
+*vim9.txt*	For Vim version 8.2.  Last change: 2021 Sep 08
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 
 		  VIM REFERENCE MANUAL	  by Bram Moolenaar
@@ -103,7 +107,11 @@ script and `:def` functions; details are below:
 	writefile(['done'], 'file.txt')
 - You cannot use `:xit`, `:t`, `:k`, `:append`, `:change`, `:insert`, `:open`,
   and `:s` or `:d` with only flags.
+<<<<<<< HEAD
 - You cannot use curly-braces names.
+=======
+  or curly-braces names.
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 - A range before a command must be prefixed with a colon: >
 	:%s/this/that
 - Executing a register with "@r" does not work, you can prepend a colon or use
@@ -180,6 +188,7 @@ For now you will need to pass the dictionary explicitly: >
 	var d = {item: 'value', func: DictFunc}
 	d.func(d, 'item')
 
+<<<<<<< HEAD
 You can call a legacy dict function though: >
 	func Legacy() dict
 	  echo self.value
@@ -189,6 +198,8 @@ You can call a legacy dict function though: >
 	  d.func()
 	enddef
 
+=======
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 The argument types and return type need to be specified.  The "any" type can
 be used, type checking will then be done at runtime, like with legacy
 functions.
@@ -206,7 +217,11 @@ When a function argument is optional (it has a default value) passing `v:none`
 as the argument results in using the default value.  This is useful when you
 want to specify a value for an argument that comes after an argument that
 should use its default value.  Example: >
+<<<<<<< HEAD
 	def MyFunc(one = 'one', last = 'last')
+=======
+	def MyFunc(one = 'one', last = 'last)
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 	  ...
 	enddef
 	MyFunc(v:none, 'LAST')  # first argument uses default value 'one'
@@ -631,7 +646,11 @@ at the start of the line indicates line continuation: >
 		|   echo 'match'
 		| endif
 
+<<<<<<< HEAD
 Note that this means that in heredoc the first line cannot start with a bar: >
+=======
+Note that this means that in heredoc the first line cannot be a bar: >
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 	var lines =<< trim END
 	   | this doesn't work
 	END
@@ -639,7 +658,11 @@ Either use an empty line at the start or do not use heredoc.  Or temporarily
 add the "C" flag to 'cpoptions': >
 	set cpo+=C
 	var lines =<< trim END
+<<<<<<< HEAD
 	   | this works
+=======
+	   | this doesn't work
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 	END
 	set cpo-=C
 If the heredoc is inside a function 'cpoptions' must be set before :def and
@@ -942,6 +965,7 @@ Ex command ranges need to be prefixed with a colon. >
 
 Some Ex commands can be confused with assignments in Vim9 script: >
 	g:name = value    # assignment
+<<<<<<< HEAD
 	:g:pattern:cmd	  # :global command
 
 To avoid confusion between a `:global` or `:substitute` command and an
@@ -957,6 +981,10 @@ are abbreviated to a single character: ':', '-' and '.'. >
 Also, there cannot be a space between the command and the separator: >
 	g /pattern/cmd	  # invalid command - ERROR
 	s /pattern/repl	  # invalid command - ERROR
+=======
+	g:pattern:cmd	  # invalid command - ERROR
+	:g:pattern:cmd	  # :global command
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 
 Functions defined with `:def` compile the whole function.  Legacy functions
 can bail out, and the following lines are not parsed: >
@@ -1118,7 +1146,11 @@ The map argument is a string expression, which is evaluated without the
 function scope.  Instead, use a lambda: >
 	def MapList(): list<string>
 	  var list = ['aa', 'bb', 'cc', 'dd']
+<<<<<<< HEAD
 	  return range(1, 2)->map((_, v) => list[v])
+=======
+	  return range(1, 2)->map(( _, v) => list[v])
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 	enddef
 
 The same is true for commands that are not compiled, such as `:global`.
@@ -1322,6 +1354,7 @@ an error, thus breaking backwards compatibility.  For example:
 - Using a string value when setting a number option.
 - Using a number where a string is expected.   *E1024*
 
+<<<<<<< HEAD
 One consequence is that the item type of a list or dict given to |map()| must
 not change.  This will give an error in Vim9 script: >
 	echo map([1, 2, 3], (i, v) => 'item ' .. i)
@@ -1332,6 +1365,18 @@ Instead use |mapnew()|: >
 
 If the item type was determined to be "any" it can change to a more specific
 type.  E.g. when a list of mixed types gets changed to a list of strings: >
+=======
+One consequence is that the item type of a list or dict given to map() must
+not change.  This will give an error in Vim9 script: >
+	vim9 echo map([1, 2, 3], (i, v) => 'item ' .. i)
+	E1012: Type mismatch; expected number but got string
+Instead use |mapnew(): >
+	vim9 echo mapnew([1, 2, 3], (i, v) => 'item ' .. i)
+	['item 0', 'item 1', 'item 2']
+
+If the item type was determined to be "any" it can change to a more specific
+type.  E.g. when a list of mixed types gets changed to a list of numbers: >
+>>>>>>> bc3b86ada9f328f31609c329e193b93b011d940c
 	var mylist = [1, 2.0, '3']
 	# typename(mylist) == "list<any>"
 	map(mylist, (i, v) => 'item ' .. i)

@@ -7,7 +7,9 @@
 	required = true
 [http]
 	sslBackend = openssl
+
 	sslCAInfo = C:/JEE Devops/Workspace STS/jgsu-spring-petclinic/Git/mingw64/ssl/certs/ca-bundle.crt
+
 [core]
 	autocrlf = true
 	fscache = true
